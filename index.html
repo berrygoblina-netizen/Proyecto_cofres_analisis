@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+        
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+
+            background: linear-gradient(rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.98)),
+                        url('https://images.unsplash.com/photo-1520975922284-9e0a6b9fbe7f');
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* 🔥 efecto pro */
+        }
+        
+
+        /* Pantallas */
+        .pantalla {
+            padding: 20px;
+        }
+
+        /* Ocultar */
+        .oculto {
+            display: none !important;
+        }
+
+        /* INICIO */
+       #inicio {
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .contenedor {
+            max-width: 1200px;
+            margin: auto;
+        }
+        /* Título épico */
+        .titulo {
+            font-size: 60px;
+            margin-bottom: 40px;
+            color: #facc15;
+            text-shadow: 
+                0 0 10px rgba(250, 204, 21, 0.8),
+                0 0 20px rgba(250, 204, 21, 0.6),
+                0 0 40px rgba(250, 204, 21, 0.4);
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Botones dorados */
+        .navbar button {
+            font-size: 20px;
+            padding: 15px 30px;
+            border-radius: 12px;
+            border: none;
+            background: linear-gradient(135deg, #facc15, #eab308);
+            color: #1e293b;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(250, 204, 21, 0.5);
+            transition: all 0.2s ease;
+        }
+
+        .navbar button:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 25px rgba(250, 204, 21, 0.8);
+        }
+
+        /* Tablas */
+       table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+
+            background: rgba(17, 17, 17, 0.85);
+            backdrop-filter: blur(6px);
+
+            border: 1px solid #333;
+            border-radius: 15px;
+            overflow: hidden;
+
+            box-shadow: 0 0 20px rgba(0,0,0,0.9);
+        }
+
+        th {
+            background-color: #1a1a1a;
+            color: #facc15;
+            font-size: 18px;
+        }
+
+        td, th {
+            padding: 12px;
+            border-bottom: 1px solid #333;
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: #2a2a2a;
+        }
+
+        /* Ranking */
+        .rankings {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap; /* para que en pantallas chicas se acomode */
+        }
+
+        /* mismo estilo que el ranking original */
+       .ranking-box {
+            width: 300px;
+
+            background: rgba(17, 17, 17, 0.85); /* 🔥 transparencia */
+            backdrop-filter: blur(6px); /* 🔥 glass effect */
+
+            border: 1px solid rgba(250, 204, 21, 0.2);
+
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+
+            box-shadow: 
+                0 0 20px rgba(0,0,0,0.9),
+                0 0 10px rgba(250, 204, 21, 0.1);
+        }
+
+        /* título */
+        .ranking-box h3 {
+            color: #facc15;
+            text-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
+        }
+
+        /* lista */
+        .ranking-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        /* items */
+       .ranking-box li {
+            padding: 10px;
+            margin-bottom: 8px;
+
+            background: linear-gradient(90deg, #1a1a1a, #111);
+
+            border-radius: 8px;
+
+            display: flex;
+            justify-content: space-between;
+
+            transition: 0.2s;
+        }
+
+        .ranking-box li:first-child {
+            border: 1px solid gold;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .ranking-box li:hover {
+            background-color: #2a2a2a;
+            transform: scale(1.02);
+        }
+
+    
+        select {
+            font-size: 18px;
+            padding: 12px 20px;
+            margin: 15px;
+            border-radius: 10px;
+            border: 1px solid #444;
+            background-color: #111;
+            color: #ccc;
+            min-width: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* cuando el usuario ya eligió algo */
+        select:valid {
+            color: white;
+        }
+        .filtro-botones button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            border: none;
+
+            background: linear-gradient(135deg, #facc15, #eab308);
+            color: #1e293b;
+
+            font-weight: bold;
+            cursor: pointer;
+
+            box-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
+            transition: all 0.2s ease;
+        }
+
+        .filtro-botones button:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px rgba(250, 204, 21, 0.8);
+        }
+        .filtro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+
+
+<!-- 🏠 PANTALLA PRINCIPAL -->
+
+<div id="inicio" class="pantalla contenedor">
+    <h1 class="titulo">Bienvenidos al Clan VAL</h1>
+
+    <nav class="navbar">
+        <button onclick="mostrarVista('jugadores')">JUGADORES</button>
+        <button onclick="mostrarVista('clan')">CLAN</button>
+    </nav>
+</div>
+
+<!-- 👤 VISTA JUGADORES -->
+<div id="jugadoresVista" class="pantalla contenedor oculto">
+    <h2>Jugadores</h2>
+
+    <button onclick="volverInicio()">⬅ Volver</button>
+
+    <br><br>
+        <div class="filtro">
+            <label for="jugador">Jugador</label>
+            <select id="jugador" required>
+                <option value="" disabled selected hidden>Elegí jugador</option>
+            </select>
+        </div>
+
+    <label for="semana">Semana:</label>
+        <select id="semana" required>
+            <option value="" disabled selected hidden>Elegí semana</option>
+            <option value="Todas">Todas</option>
+        </select>
+
+    <div class="filtro-botones">
+    <button onclick="mostrarCofres('todos')">Todos</button>
+    <button onclick="mostrarCofres('diario')">Diarios</button>
+    <button onclick="mostrarCofres('evento')">Eventos</button>
+</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cofre</th>
+                <th>Cantidad</th>
+                <th>Puntos</th>
+            </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+    </table>
+
+    <div id="total"></div>
+</div>
+
+<!-- 🏰 VISTA CLAN -->
+<div id="clanVista" class="pantalla contenedor oculto">
+
+    <h1>Estadísticas del Clan</h1>
+
+    <button onclick="volverInicio()">⬅ Volver</button>
+
+    <label for="semanaClan">Semana:</label>
+        <select id="semanaClan" onchange="mostrarRankingDiario()">
+            <option value="" disabled selected hidden>Elegí semana</option>
+            <option value="Todas">Todas</option>
+        </select>
+    
+   <div class="rankings">
+    
+    <!-- 🏆 Ranking general -->
+    <div class="ranking-box">
+        <h3>🏆 Ranking Riqueza</h3>
+        <ul id="ranking"></ul>
+    </div>
+
+    <!-- ⚔️ Ranking diario -->
+    <div class="ranking-box">
+        <h3>⚔️ Ranking Cofres</h3>
+        <ul id="rankingDiario"></ul>
+    </div>
+
+</div>
+
+</div>
+
+
+<script>
+let datos = [];
+let fechaInicio = null; // para calcular semanas reales
+
+// 1️⃣ Diccionario de mapeo de nombres (llenalo con tus datos de Excel)
+const nombreMap = {
+    // "nombre_raw": "Nombre limpio"
+    "aaron": "Aaron",
+    "aleiandra": "Alejandra",
+    "alex1os": "ALEX1OS",
+    "alma": "ALMA",
+    "ares": "ARES",
+    "Ares": "ARES",
+    "astrals": "AstralS",
+    "asteria": "ASTERIA",
+    "bartolito": "BARTOLITO",
+    "BenXander": "BenXander",
+    "benxander": "Ben Xander2",
+    "berrvyeoblina": "Berrygoblina",
+    "berryoeblina": "Berrygoblina",
+    "berryeoblina": "Berrygoblina",
+    "biin": "Biin",
+    "blalex": "B1ALEX",
+    "BLALEX": "B1ALEX",
+    "braramar": "Braramar",
+    "boyname": "Boy Name",
+    "buensolonius": "BuenSolonius",
+    "boyohboy": "Boy Oh Boy",
+    "burilen": "Burilen",
+    "byluir2008": "Byluir2008",
+    "carp": "CARP",
+    "ceznudel": "Cznudel",
+    "eznudel": "Cznudel",
+    "cznudel": "Cznudel",
+    "cheska": "CHESKA",
+    "cogamand": "Cogamand",
+    "dagelv": "Dagelv",
+    "daidal": "Daidal",
+    "dardaen": "Dardaen",
+    "dariine": "Dariing",
+    "Dariine": "Dariing",
+    "davatoloco": "Davatoloco",
+    "devildog": "Devildog",
+    "DevilDog": "Devildog",
+    "directhor": "DirecThor",
+    "durdy7777": "Durdy 7777",
+    "Durdy7777": "Durdy 7777",
+    "durea": "Durga",
+    "Durea": "Durga",
+    "erreape": "Erreape",
+    "evpenani": "Eygenani",
+    "Evpenani": "Eygenani",
+    "falcio": "Falcao",
+    "Falcio": "Falcao",
+    "feli": "Feli",
+    "findanel": "Findanel",
+    "foranan": "Foranan",
+    "francescaromana": "FrancescaRomana",
+    "gokce": "Gokce",
+    "gratius": "Gratius",
+    "gustavo": "Gustavo",
+    "jhanaukong": "Jhanau kong",
+    "kari": "Kari",
+    "keradred": "Keradred",
+    "kili": "Kili",
+    "ladyhawke": "Lady Hawke",
+    "LadyHawke": "Lady Hawke",
+    "ladywolf": "Lady Wolf",
+    "LadyWolf": "Lady Wolf",
+    "lilo": "Morochita",
+    "morochita": "Morochita",
+    "lau": "Lau",
+    "lordriel": "Lordriel",
+    "luppii": "Luppii",
+    "maginad": "Maginad",
+    "maladred": "Maladred",
+    "malorius": "Malorius",
+    "malvalitocal": "Malvalito CAI",
+    "malvalitocai": "Malvalito CAI",
+    "malvalitoCAl": "Malvalito CAI",
+
+    "malvina": "Malvina",
+    "manuelhh": "Manuelhh",
+    "marcus": "Marcus",
+    "mare": "Marg",
+    "Mare": "Marg",
+    "marrar": "Marrar",
+    "matod": "Marod",
+    "Matod": "Marod",
+    "mauro": "Mauro",
+    "meginan": "Meginan",
+    "mogrel": "Mogrel",
+    "mojora": "Mojora",
+    "monamour": "Mon Amour",
+    "murod": "Murod",
+    "nemean": "Nemean",
+    "nikita": "Nikita",
+    "pocovita": "Pocoyita",
+    "Pocovita": "Pocoyita",
+    "pocoyitaaa": "Pocoyitaaa",
+    "purplerain": "Purple Rain",
+    "PurpleRain": "Purple Rain",
+    "reneo": "Rengo",
+    "roca": "Roca",
+    "rufean": "Rufean",
+    "rufeanil": "Rufean 2",
+    "RufeanIl": "Rufean 2",
+    "saberflame": "Saberflame",
+    "shallan": "Shallan",
+    "sisusk": "SisusK",
+    "stitch": "Stitch",
+    "thelion": "The Lion",
+    "weezie": "WEEZIE",
+    "wendy": "WENDY",
+    "yime": "Yime",
+    "zololar": "Zololar",
+    "willyouiroea1970": "Willy Quiroga 1970",
+    "maunes": "Maungs",
+    "eder": "Eder",
+    "junior": "Junior",
+    "raskle": "RASKLE",
+    "soule1970": "Soule1970",
+    "spartacus": "SPARTACUS",
+    "tyaojind": "Tygojind",
+    "sisu": "Sisu",
+    "durga": "Durga",
+    "nimona": "Nimona",
+    "billkill": "Bill Kill",
+   
+    // agregá todos los que tengas
+};
+
+// 2️⃣ Cargar JSON
+fetch("data/datos.json")
+  .then(res => res.json())
+  .then(data => console.log(data));
+
+        // 🔹 Aplicar mapeo de nombres
+            // 🔹 Limpiar nombres (minúsculas + espacios)
+    datos = datos.filter(d => {
+        let nombre = d.Jugador.trim().toLowerCase();
+
+    // ❌ eliminar nombres basura
+        if (nombre.length <= 1) return false; // elimina "a", "b", etc.
+        if (nombre === "0") return false;
+        if (nombre === "-") return false;
+
+    // aplicar mapeo
+        if (nombreMap[nombre]) {
+        d.Jugador = nombreMap[nombre];
+        } else {
+        d.Jugador = nombre;
+        }
+
+        return true;
+    });
+
+console.log("Nombres detectados:", [...new Set(datos.map(d => d.Jugador))]);
+        // 🔹 Obtener fecha más antigua para calcular semanas
+        const fechas = datos.map(d => new Date(d.Fecha));
+        fechaInicio = new Date(Math.min(...fechas));
+
+        // 🔹 Calcular semanas y agregarlas
+        datos.forEach(d => {
+            const fechaD = new Date(d.Fecha);
+            const semana = Math.floor((fechaD - fechaInicio) / (1000 * 60 * 60 * 24 * 7)) + 1;
+            d.semanaCalc = `Semana ${semana}`;
+        });
+
+        // 3️⃣ Poblar select de jugadores
+        const jugadores = [...new Set(datos.map(d => d.Jugador))].sort();
+        const jugadorSelect = document.getElementById("jugador");
+        jugadores.forEach(j => {
+            const option = document.createElement("option");
+            option.value = j;
+            option.textContent = j;
+            jugadorSelect.appendChild(option);
+        });
+
+        // 4️⃣ Poblar select de semanas
+        const semanas = [...new Set(datos.map(d => d.semanaCalc))].sort((a,b)=>{
+            const numA = parseInt(a.split(" ")[1]);
+            const numB = parseInt(b.split(" ")[1]);
+            return numA - numB;
+        });
+
+        const semanaSelect = document.getElementById("semana");
+        const semanaClanSelect = document.getElementById("semanaClan");
+        semanaClanSelect.addEventListener("change", mostrarRanking);
+        semanas.forEach(s => {
+            // Jugadores
+            const option1 = document.createElement("option");
+            option1.value = s;
+            option1.textContent = s;
+            semanaSelect.appendChild(option1);
+
+            // Clan
+            const option2 = document.createElement("option");
+            option2.value = s;
+            option2.textContent = s;
+            semanaClanSelect.appendChild(option2);
+        });
+    
+
+// 5️⃣ Valores de cofres para calcular puntos
+const valoresCofre = {
+    "Arena": 30,
+    "Cripta de nivel 5": 13,
+    "Cripta de nivel 10": 35,
+    "Cripta de nivel 15": 75,
+    "Cripta de nivel 20": 167,
+    "Cripta de nivel 25": 427,
+    "Cripta de nivel 30": 1067,
+    "Cripta de nivel 35": 2560,
+    "Cripta rara de nivel 10": 65,
+    "Cripta rara de nivel 15": 129,
+    "Cripta rara de nivel 20": 500,
+    "Cripta rara de nivel 25": 626,
+    "Cripta rara de nivel 30": 1350,
+    "Cripta épica de nivel 15": 310,
+    "Cripta épica de nivel 20": 596,
+    "Cripta épica de nivel 25": 1100,
+    "Cripta épica de nivel 30": 2090,
+    "Cripta épica de nivel 35": 3000,
+    "Cripta del Tártaro de nivel 10": 100,
+    "Cripta del Tártaro de nivel 15": 310,
+    "Cripta del Tártaro de nivel 20": 596,
+    "Cripta del Tártaro de nivel 25": 1100,
+    "Cripta del Tártaro de nivel 30": 2090,
+    "Cripta del Tártaro de nivel 35": 3000,
+    "Ciudadela de nivel 10": 19,
+    "Ciudadela de nivel 15": 29,
+    "Ciudadela de nivel 20": 37,
+    "Ciudadela de nivel 25": 93,
+    "Ciudadela de nivel 30": 128,
+    "Monstruo heroico de nivel 16": 115,
+    "Monstruo heroico de nivel 17": 115,
+    "Monstruo heroico de nivel 18": 115,
+    "Monstruo heroico de nivel 19": 115,
+    "Monstruo heroico de nivel 20": 205,
+    "Monstruo heroico de nivel 21": 205,
+    "Monstruo heroico de nivel 22": 205,
+    "Monstruo heroico de nivel 23": 205,
+    "Monstruo heroico de nivel 24": 205,
+    "Monstruo heroico de nivel 25": 455,
+    "Monstruo heroico de nivel 26": 640,
+    "Monstruo heroico de nivel 27": 640,
+    "Monstruo heroico de nivel 28": 640,
+    "Monstruo heroico de nivel 29": 640,
+    "Monstruo heroico de nivel 30": 640,
+    "Monstruo heroico de nivel 31": 640,
+    "Monstruo heroico de nivel 32": 640,
+    "Monstruo heroico de nivel 33": 640,
+    "Monstruo heroico de nivel 34": 640,
+    "Monstruo heroico de nivel 35": 640,
+    "Monstruo heroico de nivel 36": 640,
+    "Monstruo heroico de nivel 37": 640,
+    "Monstruo heroico de nivel 38": 640,
+    "Monstruo heroico de nivel 39": 640,
+    "Monstruo heroico de nivel 40": 640,
+    "Monstruo heroico de nivel 41": 640,
+    "Monstruo heroico de nivel 42": 640,
+    "Monstruo heroico de nivel 43": 640,
+    "Monstruo heroico de nivel 44": 640,
+    "Monstruo heroico de nivel 45": 640,
+    "Banco": 155,
+    "Bóveda de los Antiguos de nivel 10-14": 100,
+    "Bóveda de los Antiguos de nivel 20-24": 200,
+    "Bóveda de los Antiguos de nivel 25-29": 300,
+    "Bóveda de los Antiguos de nivel 30-34": 400,
+    "Bóveda de los Antiguos de nivel 35-39": 500,
+    "Bóveda de los Antiguos de nivel 40-44": 600,
+    "Tienda de Hermes": 500,
+    "Cofre Imitador": 100,
+    "Escuadrón Rúnico de Asalto de nivel 20-24": 200,
+    "Escuadrón Rúnico de Asalto de nivel 25-29": 300,
+    "Escuadrón Rúnico de Asalto de nivel 30-34": 400,
+    "Escuadrón Rúnico de Asalto de nivel 35-39": 500,
+    "Escuadrón Rúnico de Asalto de nivel 40-44": 600,
+    "Recompensa Personal de Unión del Triunfo": 0,
+    "Riqueza del Clan": 0,
+    "Tienda de Jormungandr": 1000,
+    "Torneo Batalla por el Trono": 1000,
+    "Torneo Carrera por la Autoridad": 1000,
+   
+    "Escuadrón Épico de Fenrir": 1000,
+    "Escuadrón Épico de Jormungandr": 1000,
+    "Escuadrón Épico de los Antiguos": 1000,
+    "Evento Ascenso de los Antiguos": 100,
+    "Evento Botín del Terror": 1000,
+    "Evento Pruebas del Olimpo": 0,
+
+    
+
+
+    // agregá los que tengas en tu Excel
+};
+const cofreMap = {
+    "criptadenivel5": "Cripta de nivel 5",
+    "Criptadenivel5": "Cripta de nivel 5",
+
+    "criptadenivel10": "Cripta de nivel 10",
+    "Criptadenivel10": "Cripta de nivel 10",
+    "criptadenivel15": "Cripta de nivel 15",
+    "Criptadenivel15": "Cripta de nivel 15",
+    "criptadenivel20": "Cripta de nivel 20",
+    "Criptadenivel20": "Cripta de nivel 20",
+    "criptadenivel25": "Cripta de nivel 25",
+    "Criptadenivel25": "Cripta de nivel 25",
+    "criptadenivel30": "Cripta de nivel 30",
+    "Criptadenivel30": "Cripta de nivel 30",
+    "criptadenivel35": "Cripta de nivel 35",
+    "Criptadenivel35": "Cripta de nivel 35",
+
+    "Criptararadenivel10": "Cripta rara de nivel 10",
+    "criptararadenivel10": "Cripta rara de nivel 10",
+
+    "Criptararadenivel15": "Cripta rara de nivel 15",
+    "criptararadenivel15": "Cripta rara de nivel 15",
+
+    "Criptararadenivel20": "Cripta rara de nivel 20",
+    "criptararadenivel20": "Cripta rara de nivel 20",
+
+    "Criptararadenivel25": "Cripta rara de nivel 25",
+    "criptararadenivel25": "Cripta rara de nivel 25",
+
+    "Criptararadenivel30": "Cripta rara de nivel 30",
+    "criptararadenivel30": "Cripta rara de nivel 30",
+
+    "Criptaepicadenivel15": "Cripta épica de nivel 15",
+    "criptapicadenivel15": "Cripta épica de nivel 15",
+
+    "Criptaepicadenivel20": "Cripta épica de nivel 20",
+    "criptapicadenivel20": "Cripta épica de nivel 20",
+
+    "Criptaepicadenivel25": "Cripta épica de nivel 25",
+    "criptapicadenivel25": "Cripta épica de nivel 25",
+    "Criptaepicadenivel30": "Cripta épica de nivel 30",
+    "criptapicadenivel30": "Cripta épica de nivel 30",
+    "Criptaepicadenivel35": "Cripta épica de nivel 35",
+    "criptapicadenivel35": "Cripta épica de nivel 35",
+    "Ciudadeladenivel10": "Ciudadela de nivel 10",
+    "ciudadeladenivel10": "Ciudadela de nivel 10",
+
+    "Ciudadeladenivel15": "Ciudadela de nivel 15",
+    "ciudadeladenivel15": "Ciudadela de nivel 15",
+    "Ciudadeladenivel20": "Ciudadela de nivel 20",
+    "ciudadeladenivel20": "Ciudadela de nivel 20",
+    "Ciudadeladenivel25": "Ciudadela de nivel 25",
+    "ciudadeladenivel25": "Ciudadela de nivel 25",
+    "Ciudadeladenivel30": "Ciudadela de nivel 30",
+    "ciudadeladenivel30": "Ciudadela de nivel 30",
+    "Monstruoheroicodenivel16": "Monstruo heroico de nivel 16",
+    "monstruoheroicodenivel16": "Monstruo heroico de nivel 16",
+    "Monstruoheroicodenivel17": "Monstruo heroico de nivel 17",
+    "monstruoheroicodenivel17": "Monstruo heroico de nivel 17",
+    "Monstruoheroicodenivel18": "Monstruo heroico de nivel 18",
+    "monstruoheroicodenivel18": "Monstruo heroico de nivel 18",
+    "Monstruoheroicodenivel19": "Monstruo heroico de nivel 19",
+    "monstruoheroicodenivel19": "Monstruo heroico de nivel 19",
+    "Monstruoheroicodenivel20": "Monstruo heroico de nivel 20",
+    "monstruoheroicodenivel20": "Monstruo heroico de nivel 20",
+    "Monstruoheroicodenivel21": "Monstruo heroico de nivel 21",
+    "monstruoheroicodenivel21": "Monstruo heroico de nivel 21",
+    "Monstruoheroicodenivel22": "Monstruo heroico de nivel 22",
+    "monstruoheroicodenivel22": "Monstruo heroico de nivel 22",
+    "Monstruoheroicodenivel23": "Monstruo heroico de nivel 23",
+    "monstruoheroicodenivel23": "Monstruo heroico de nivel 23",
+    "Monstruoheroicodenivel24": "Monstruo heroico de nivel 24",
+    "monstruoheroicodenivel24": "Monstruo heroico de nivel 24",
+    "Monstruoheroicodenivel25": "Monstruo heroico de nivel 25",
+    "monstruoheroicodenivel25": "Monstruo heroico de nivel 25",
+    "Monstruoheroicodenivel26": "Monstruo heroico de nivel 26",
+    "monstruoheroicodenivel26": "Monstruo heroico de nivel 26",
+    "Monstruoheroicodenivel27": "Monstruo heroico de nivel 27",
+    "monstruoheroicodenivel27": "Monstruo heroico de nivel 27",
+    "Monstruoheroicodenivel28": "Monstruo heroico de nivel 28",
+    "monstruoheroicodenivel28": "Monstruo heroico de nivel 28",
+    "Monstruoheroicodenivel29": "Monstruo heroico de nivel 29",
+    "monstruoheroicodenivel29": "Monstruo heroico de nivel 29",
+    "Monstruoheroicodenivel30": "Monstruo heroico de nivel 30",
+    "monstruoheroicodenivel30": "Monstruo heroico de nivel 30",
+    "Monstruoheroicodenivel31": "Monstruo heroico de nivel 31",
+    "monstruoheroicodenivel31": "Monstruo heroico de nivel 31",
+    "Monstruoheroicodenivel32": "Monstruo heroico de nivel 32",
+    "monstruoheroicodenivel32": "Monstruo heroico de nivel 32",
+    "Monstruoheroicodenivel33": "Monstruo heroico de nivel 33",
+    "monstruoheroicodenivel33": "Monstruo heroico de nivel 33",
+    "Monstruoheroicodenivel34": "Monstruo heroico de nivel 34",
+    "monstruoheroicodenivel34": "Monstruo heroico de nivel 34",
+    "Monstruoheroicodenivel35": "Monstruo heroico de nivel 35",
+    "monstruoheroicodenivel35": "Monstruo heroico de nivel 35",
+    "Monstruoheroicodenivel36": "Monstruo heroico de nivel 36",
+    "monstruoheroicodenivel36": "Monstruo heroico de nivel 36",
+    "Monstruoheroicodenivel37": "Monstruo heroico de nivel 37",
+    "monstruoheroicodenivel37": "Monstruo heroico de nivel 37",
+    "Monstruoheroicodenivel38": "Monstruo heroico de nivel 38",
+    "monstruoheroicodenivel38": "Monstruo heroico de nivel 38",
+    "Monstruoheroicodenivel39": "Monstruo heroico de nivel 39",
+    "monstruoheroicodenivel39": "Monstruo heroico de nivel 39",
+    "Monstruoheroicodenivel40": "Monstruo heroico de nivel 40",
+    "monstruoheroicodenivel40": "Monstruo heroico de nivel 40",
+    "Monstruoheroicodenivel41": "Monstruo heroico de nivel 41",
+    "monstruoheroicodenivel41": "Monstruo heroico de nivel 41",
+    "Monstruoheroicodenivel42": "Monstruo heroico de nivel 42",
+    "monstruoheroicodenivel42": "Monstruo heroico de nivel 42",
+    "Monstruoheroicodenivel43": "Monstruo heroico de nivel 43",
+    "monstruoheroicodenivel43": "Monstruo heroico de nivel 43",
+    "Monstruoheroicodenivel44": "Monstruo heroico de nivel 44",
+    "monstruoheroicodenivel44": "Monstruo heroico de nivel 44",
+    "Monstruoheroicodenivel45": "Monstruo heroico de nivel 45",
+    "monstruoheroicodenivel45": "Monstruo heroico de nivel 45",
+    "bvedadelosantiguosdenivel1014": "Bóveda de los Antiguos de nivel 10-14",
+    "bvedadelosantiguosdenivel2024": "Bóveda de los Antiguos de nivel 20-24",
+    "bvedadelosantiguosdenivel2529": "Bóveda de los Antiguos de nivel 25-29",
+    "bvedadelosantiguosdenivel3034": "Bóveda de los Antiguos de nivel 30-34",
+    "bvedadelosantiguosdenivel3539": "Bóveda de los Antiguos de nivel 35-39",
+    "bvedadelosantiguosdenivel4044": "Bóveda de los Antiguos de nivel 40-44",
+    "tiendadehermes": "Tienda de Hermes",
+    "Tiendadehermes": "Tienda de Hermes",
+    "Cofreimitador": "Cofre Imitador",
+    "cofreimitador": "Cofre Imitador",
+    "escuadrnrnicodeasaltonv2024": "Escuadrón Rúnico de Asalto de nivel 20-24",
+    "escuadrnrnicodeasaltonv2529": "Escuadrón Rúnico de Asalto de nivel 25-29",
+    "escuadrnrnicodeasaltonv3034": "Escuadrón Rúnico de Asalto de nivel 30-34",
+    "escuadrnrnicodeasaltonv3539": "Escuadrón Rúnico de Asalto de nivel 35-39",
+
+    "Escuadrnrnicodeasaltonv2024": "Escuadrón Rúnico de Asalto de nivel 20-24",
+    "Escuadrnrnicodeasaltonv2529": "Escuadrón Rúnico de Asalto de nivel 25-29",
+    "Escuadrnrnicodeasaltonv3034": "Escuadrón Rúnico de Asalto de nivel 30-34",
+    "Escuadrnrnicodeasaltonv3539": "Escuadrón Rúnico de Asalto de nivel 35-39",
+    "Escuadrnrnicodeasaltonv4044": "Escuadrón Rúnico de Asalto de nivel 40-44",
+    "escuadrnrnicodeasaltonv4044": "Escuadrón Rúnico de Asalto de nivel 40-44",
+    "RecompensapersonaldeUnindeltriunfo": "Recompensa Personal de Unión del Triunfo",
+    "recompensapersonaldeunindeltriunfo": "Recompensa Personal de Unión del Triunfo",
+    "Riquezadelclan": "Riqueza del Clan",
+    "riquezadelclan": "Riqueza del Clan",
+    "TiendadeJormungandr": "Tienda de Jormungandr",
+    "tiendadejormungandr": "Tienda de Jormungandr",
+    "tiendadejrmungandr": "Tienda de Jormungandr",
+    "torneobatallaporeltrono": "Torneo Batalla por el Trono",
+    "torneocarreraporlaautoridad": "Torneo Carrera por la Autoridad",
+    "arena": "Arena",
+    "criptadeltrtaronivel10": "Cripta del Tártaro de nivel 10",
+    "criptadeltrtaronivel15": "Cripta del Tártaro de nivel 15",
+    "criptadeltrtaronivel20": "Cripta del Tártaro de nivel 20",
+    "criptadeltrtaronivel25": "Cripta del Tártaro de nivel 25",
+    "criptadeltrtaronivel30": "Cripta del Tártaro de nivel 30",
+    "criptadeltrtaronivel35": "Cripta del Tártaro de nivel 35",
+    "escuadrnpicodefenrir": "Escuadrón Épico de Fenrir",
+    "escuadrnpicodejormungandr": "Escuadrón Épico de Jormungandr",
+    "escuadrnpicodejrmungandr": "Escuadrón Épico de Jormungandr",
+    "escuadrnpicodelosantiguos": "Escuadrón Épico de los Antiguos",
+    "eventoascensodelosantiguos": "Evento Ascenso de los Antiguos",
+    "eventobotindelterror": "Evento Botín del Terror",
+    "eventopruebasdelolimpo": "Evento Pruebas del Olimpo",
+    "j Arena": "Arena",
+    "j arena": "Arena",
+    "banco": "Banco",
+    "bolsademercenarios": "Bolsa de Mercenarios",
+    "Bolsademercenarios": "Bolsa de Mercenarios",
+
+
+};
+const tipoCofre = {
+    // DIARIOS
+    "Arena": "diario",
+    "Cripta de nivel 5": "diario",
+    "Cripta de nivel 10": "diario",
+    "Cripta de nivel 15": "diario",
+    "Cripta de nivel 20": "diario",
+    "Cripta de nivel 25": "diario",
+    "Cripta de nivel 30": "diario",
+    "Cripta de nivel 35": "diario",
+    "Cripta rara de nivel 10": "diario",
+    "Cripta rara de nivel 15": "diario",
+    "Cripta rara de nivel 20": "diario",
+    "Cripta rara de nivel 25": "diario",
+    "Cripta rara de nivel 30": "diario",
+    "Cripta épica de nivel 15": "diario",
+    "Cripta épica de nivel 20": "diario",
+    "Cripta épica de nivel 25": "diario",
+    "Cripta épica de nivel 30": "diario",
+    "Cripta épica de nivel 35": "diario",
+    "Ciudadela de nivel 10": "diario",
+    "Ciudadela de nivel 15": "diario",
+    "Ciudadela de nivel 20": "diario",
+    "Ciudadela de nivel 25": "diario",
+    "Ciudadela de nivel 30": "diario",
+    "Ciudadela de nivel 35": "diario",
+
+    // EVENTOS
+    "Evento Pruebas del Olimpo": "evento",
+    "Evento Botín del Terror": "evento",
+    "Evento Ascenso de los Antiguos": "evento",
+    "Torneo Batalla por el Trono": "evento",
+    "Torneo Carrera por la Autoridad": "evento",
+};
+
+function mostrarVista(vista) {
+    document.getElementById("inicio").classList.add("oculto");
+    document.getElementById("jugadoresVista").classList.add("oculto");
+    document.getElementById("clanVista").classList.add("oculto");
+
+    if (vista === "jugadores") {
+        document.getElementById("jugadoresVista").classList.remove("oculto");
+    }
+
+    if (vista === "clan") {
+        document.getElementById("clanVista").classList.remove("oculto");
+        mostrarRanking();
+        mostrarRankingDiario(); // 👈 importante
+    }
+}
+function volverInicio() {
+    document.getElementById("inicio").classList.remove("oculto");
+    document.getElementById("jugadoresVista").classList.add("oculto");
+    document.getElementById("clanVista").classList.add("oculto");
+}
+// 6️⃣ Función para mostrar resultados filtrados y sumar puntos
+function mostrarCofres(tipo = "todos") {
+
+    const jugador = document.getElementById("jugador").value;
+    const semana = document.getElementById("semana").value;
+    const tabla = document.getElementById("tabla");
+    const total = document.getElementById("total");
+
+    tabla.innerHTML = "";
+    total.innerHTML = "";
+
+    if (!jugador) return;
+
+    // 🔹 1. FILTRAR POR JUGADOR
+    let filtrados = datos.filter(d => d.Jugador === jugador);
+
+    // 🔹 2. FILTRAR POR SEMANA
+    if (semana !== "Todas") {
+        filtrados = filtrados.filter(d => d.semanaCalc === semana);
+    }
+
+    // 🔥 3. FILTRAR POR TIPO (ACA ESTABA TU ERROR)
+    if (tipo === "diario") {
+        filtrados = filtrados.filter(d => {
+            let cofreRaw = d.Cofre.trim().toLowerCase();
+            let cofreLimpio = cofreMap[cofreRaw] || cofreRaw;
+            return tipoCofre[cofreLimpio] === "diario";
+        });
+    }
+
+    if (tipo === "evento") {
+        filtrados = filtrados.filter(d => {
+            let cofreRaw = d.Cofre.trim().toLowerCase();
+            let cofreLimpio = cofreMap[cofreRaw] || cofreRaw;
+            return tipoCofre[cofreLimpio] === "evento";
+        });
+    }
+
+    // 🔹 4. CONTAR Y SUMAR
+    const conteo = {};
+    let riquezaTotal = 0;
+
+    filtrados.forEach(d => {
+        let cofreRaw = d.Cofre.trim().toLowerCase();
+        let cofreLimpio = cofreMap[cofreRaw] || cofreRaw;
+
+        conteo[cofreLimpio] = (conteo[cofreLimpio] || 0) + 1;
+        riquezaTotal += valoresCofre[cofreLimpio] || 0;
+    });
+
+    // 🔹 5. MOSTRAR EN TABLA
+    Object.entries(conteo).forEach(([cofre, cant]) => {
+        const puntos = (valoresCofre[cofre] || 0) * cant;
+
+        const fila = document.createElement("tr");
+        fila.innerHTML = `
+            <td>${cofre}</td>
+            <td>${cant}</td>
+            <td>${puntos}</td>
+        `;
+
+        tabla.appendChild(fila);
+    });
+
+    total.innerHTML = `<strong>Riqueza total: ${riquezaTotal}</strong>`;
+}
+function mostrarRanking() {
+    const lista = document.getElementById("ranking");
+    lista.innerHTML = "";
+
+    const semana = document.getElementById("semanaClan").value;
+
+    const ranking = rankingClan(semana);
+
+    ranking.forEach(([jugador, puntos], index) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <span>#${index + 1} ${jugador}</span>
+            <span>💰 ${puntos}</span>`;
+        lista.appendChild(li);
+            if (index === 0) li.style.border = "2px solid gold";
+            if (index === 1) li.style.border = "2px solid silver";
+            if (index === 2) li.style.border = "2px solid #cd7f32"; // bronce
+        });
+    console.log("ejecutando ranking diario");
+
+}
+function rankingClan(semana) {
+    const ranking = {};
+
+    datos.forEach(d => {
+        if (semana !== "Todas" && d.semanaCalc !== semana) return;
+
+        let cofreRaw = d.Cofre.trim().toLowerCase();
+        let cofreLimpio = cofreMap[cofreRaw] || cofreRaw;
+
+        let puntos = valoresCofre[cofreLimpio] || 0;
+
+        ranking[d.Jugador] = (ranking[d.Jugador] || 0) + puntos;
+    });
+
+    return Object.entries(ranking)
+        .sort((a, b) => b[1] - a[1]);
+}
+function mostrarRankingDiario() {
+
+    const lista = document.getElementById("rankingDiario");
+    lista.innerHTML = "";
+
+    let semanaSeleccionada = document.getElementById("semanaClan").value;
+    if (!semanaSeleccionada) return;
+
+    let puntosPorJugador = {};
+
+    datos.forEach(registro => {
+
+        let tipo = (registro.Cofre || "").toLowerCase();
+        let semana = registro.semanaCalc;
+
+        // 👇 FILTRO POR SEMANA
+        if (semanaSeleccionada !== "Todas" && semana !== semanaSeleccionada) {
+            return;
+        }
+
+        if (
+            tipo.includes("arena") ||
+            tipo.includes("cripta") ||
+            tipo.includes("ciudad")
+        ) {
+
+            let jugador = registro.Jugador || "Desconocido";
+
+            if (!puntosPorJugador[jugador]) {
+                puntosPorJugador[jugador] = 0;
+            }
+
+            puntosPorJugador[jugador] += 1;
+        }
+    });
+
+    let ranking = Object.entries(puntosPorJugador)
+        .sort((a, b) => b[1] - a[1]);
+
+    ranking.forEach(([jugador, puntos]) => {
+        let li = document.createElement("li");
+        li.innerHTML = `<span>${jugador}</span> <span>${puntos}</span>`;
+        lista.appendChild(li);
+    });
+}
+function dibujarGrafico(ranking) {
+    const labels = ranking.map(r => r[0]);
+    const data = ranking.map(r => r[1]);
+
+    new Chart(document.getElementById("graficoClan"), {
+        type: "bar",
+        data: {
+            labels: labels,
+            datasets: [{
+                label: "Puntos",
+                data: data
+            }]
+        }
+    });
+}
+function actividadDiaria() {
+    const dias = {};
+
+    datos.forEach(d => {
+        const dia = d.Fecha.split(" ")[0];
+        dias[dia] = (dias[dia] || 0) + 1;
+    });
+
+    return dias;
+}
+console.log([...new Set(datos.map(d => d.Jugador))]);
+// 7️⃣ Eventos
+document.getElementById("jugador").addEventListener("change", mostrarCofres);
+document.getElementById("semana").addEventListener("change", mostrarCofres);
+</script>
+
+</body>
+</html>
