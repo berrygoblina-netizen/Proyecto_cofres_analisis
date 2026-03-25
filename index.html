@@ -310,7 +310,7 @@
 
 <script>
     console.log("🔥 SCRIPT CARGADO");
-    console.log("🔥 SCRIPT CARGADO");
+    
 let datos = [];
 let fechaInicio = null; // para calcular semanas reales
 
@@ -443,14 +443,15 @@ const nombreMap = {
 };
 
 // 2️⃣ Cargar JSON
+// 🔥 CARGA ÚNICA DE DATOS
 fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/datos.json")
   .then(res => res.json())
   .then(data => {
-    console.log("CANTIDAD:", datos.length);
+
     console.log("DATOS CRUDOS:", data);
-    console.log("ES ARRAY?", Array.isArray(data));
-    datos = data; // 🔥 ESTA ES LA LÍNEA QUE FALTABA
-    console.log("DATA:", data);
+
+    datos = data;
+
     // 🔹 LIMPIEZA DE NOMBRES
     datos = datos.filter(d => {
         let nombre = (d.Jugador || "").trim().toLowerCase();
@@ -459,17 +460,11 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
         if (nombre === "0") return false;
         if (nombre === "-") return false;
 
-        if (nombreMap[nombre]) {
-            d.Jugador = nombreMap[nombre];
-        } else {
-            d.Jugador = nombre;
-        }
+        d.Jugador = nombreMap[nombre] || nombre;
 
         return true;
     });
-    
-    console.log("Nombres detectados:", [...new Set(datos.map(d => d.Jugador))]);
-    
+
     // 🔹 CALCULAR SEMANAS
     const fechas = datos.map(d => new Date(d.Fecha));
     fechaInicio = new Date(Math.min(...fechas));
@@ -480,9 +475,17 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
         d.semanaCalc = `Semana ${semana}`;
     });
 
-    // 🔹 POBLAR SELECTS
-    const jugadores = [...new Set(datos.map(d => d.Jugador))].sort();
+    // 🔹 LIMPIAR SELECTS (CLAVE para evitar duplicados)
     const jugadorSelect = document.getElementById("jugador");
+    const semanaSelect = document.getElementById("semana");
+    const semanaClanSelect = document.getElementById("semanaClan");
+
+    jugadorSelect.innerHTML = "";
+    semanaSelect.innerHTML = "";
+    semanaClanSelect.innerHTML = "";
+
+    // 🔹 JUGADORES
+    const jugadores = [...new Set(datos.map(d => d.Jugador))].sort();
 
     jugadores.forEach(j => {
         const option = document.createElement("option");
@@ -491,19 +494,13 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
         jugadorSelect.appendChild(option);
     });
 
-    const semanas = [...new Set(datos.map(d => d.semanaCalc))].sort((a,b)=>{
-        const numA = parseInt(a.split(" ")[1]);
-        const numB = parseInt(b.split(" ")[1]);
-        return numA - numB;
-    });
-
-    const semanaSelect = document.getElementById("semana");
-    const semanaClanSelect = document.getElementById("semanaClan");
-
-    semanaClanSelect.addEventListener("change", () => {
-        mostrarRanking();
-        mostrarRankingDiario();
-    });
+    // 🔹 SEMANAS (ORDENADAS)
+    const semanas = [...new Set(datos.map(d => d.semanaCalc))]
+        .sort((a, b) => {
+            const numA = parseInt(a.split(" ")[1]);
+            const numB = parseInt(b.split(" ")[1]);
+            return numA - numB;
+        });
 
     semanas.forEach(s => {
         const option1 = document.createElement("option");
@@ -517,72 +514,13 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
         semanaClanSelect.appendChild(option2);
     });
 
-});
-
-
-fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/datos.json")
-  .then(res => res.json())
-  .then(data => {
-
-    console.log("DATOS CRUDOS:", data);
-    console.log("ES ARRAY?", Array.isArray(data));
-    console.log("PRIMER REGISTRO:", data[0]);
-    console.log("REGISTRO REAL:", data[0]);
-
-    datos = data;
-
-    // 🔹 LIMPIEZA
-    datos = datos.filter(d => {
-        let nombre = (d.Jugador || "").trim().toLowerCase();
-
-        if (nombre.length <= 1) return false;
-        if (nombre === "0") return false;
-        if (nombre === "-") return false;
-
-        if (nombreMap[nombre]) {
-            d.Jugador = nombreMap[nombre];
-        } else {
-            d.Jugador = nombre;
-        }
-
-        return true;
+    // 🔹 EVENTOS
+    semanaClanSelect.addEventListener("change", () => {
+        mostrarRanking();
+        mostrarRankingDiario();
     });
 
-    console.log("Nombres detectados:", [...new Set(datos.map(d => d.Jugador))]);
-
-    // 🔹 SEMANAS
-    const fechas = datos.map(d => new Date(d.Fecha));
-    fechaInicio = new Date(Math.min(...fechas));
-
-    datos.forEach(d => {
-        const fechaD = new Date(d.Fecha);
-        const semana = Math.floor((fechaD - fechaInicio) / (1000 * 60 * 60 * 24 * 7)) + 1;
-        d.semanaCalc = `Semana ${semana}`;
-    });
-
-    // 🔹 SELECTS
-    const jugadores = [...new Set(datos.map(d => d.Jugador))].sort();
-    const jugadorSelect = document.getElementById("jugador");
-
-    jugadores.forEach(j => {
-        const option = document.createElement("option");
-        option.value = j;
-        option.textContent = j;
-        jugadorSelect.appendChild(option);
-    });
-
-    const semanas = [...new Set(datos.map(d => d.semanaCalc))];
-
-    const semanaClanSelect = document.getElementById("semanaClan");
-
-    semanas.forEach(s => {
-        const option = document.createElement("option");
-        option.value = s;
-        option.textContent = s;
-        semanaClanSelect.appendChild(option);
-    });
-
-    // 🔥 LLAMAR FUNCIONES ACÁ
+    // 🔥 INICIAL
     mostrarRanking();
     mostrarRankingDiario();
 
