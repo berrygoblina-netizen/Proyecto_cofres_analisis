@@ -1,0 +1,17 @@
+recolector_cofres/
+│
+├── main.py
+├── config.py
+├── ocr.py
+├── image_utils.py
+└── data.csv
+
+config.py: Guarda coordenadas de las regiones.
+
+image_utils.py: Captura pantalla y recorta zonas.
+
+ocr.py: Se encarga de Tesseract.
+
+main.py: Orquesta todo.
+fase 1: Captura → Recorte → Preprocesado → OCR → Texto limpio
+fase 2
