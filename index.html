@@ -323,6 +323,7 @@ const nombresInvalidos = [
     "eh will be janored and an amp",
     "e do o",
     "Lterfdelimiter",
+    "Lterfdelimiter",
     "Teufelhunden",
     "Teufelhunden ",
     "a a a"
@@ -374,6 +375,7 @@ const nombreMap = {
     "erreape": "Erreape",
     "evpenani": "Eygenani",
     "Evpenani": "Eygenani",
+    "eygenani": "Eygenani",
     "falcio": "Falcao",
     "Falcio": "Falcao",
     "feli": "Feli",
@@ -398,6 +400,7 @@ const nombreMap = {
     "lau": "Lau",
     "lordriel": "Lordriel",
     "luppii": "Luppii",
+    "lappii": "Luppii",
     "maginad": "Maginad",
     "maladred": "Maladred",
     "malorius": "Malorius",
@@ -405,6 +408,7 @@ const nombreMap = {
     "malvalitocal": "Malvalito CAI",
     "malvalitocai": "Malvalito CAI",
     "malvalitoCAl": "Malvalito CAI",
+    "malvalito cai": "Malvalito CAI",
 
     "malvina": "Malvina",
     "manuelhh": "Manuelhh",
@@ -416,7 +420,7 @@ const nombreMap = {
     "Matod": "Marod",
     "mauro": "Mauro",
     "meginan": "Meginan",
-    "Megíinan": "Meginan",
+    "megiinan": "Meginan",
     "mogrel": "Mogrel",
     "mojora": "Mojora",
     "monamour": "Mon Amour",
@@ -435,9 +439,11 @@ const nombreMap = {
     "rufeanil": "Rufean 2",
     "RufeanIl": "Rufean 2",
     "Rufean Il": "Rufean 2",
+    "rufean il": "Rufean 2",
     "saberflame": "Saberflame",
     "shallan": "Shallan",
     "sisusk": "SisusK",
+    "sisuskk": "SisusK",
     "stitch": "Stitch",
     "thelion": "The Lion",
     "weezie": "WEEZIE",
@@ -452,6 +458,7 @@ const nombreMap = {
     "soule1970": "Soule1970",
     "spartacus": "SPARTACUS",
     "tyaojind": "Tygojind",
+    "tyeojind": "Tygojind",
     "sisu": "Sisu",
     "durga": "Durga",
     "nimona": "Nimona",
@@ -479,8 +486,18 @@ function esNombreValido(nombre) {
     return true;
 }
 
+function limpiarTexto(texto) {
+    return texto
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim();
+}
+
 function normalizarNombre(nombre) {
-    return nombreMap[nombre] || nombre;
+    const limpio = limpiarTexto(nombre);
+
+    return nombreMap[limpio] || limpio;
 }
 function capitalizarNombre(nombre) {
     return nombre
