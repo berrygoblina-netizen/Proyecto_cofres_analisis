@@ -315,6 +315,18 @@ let datos = [];
 let fechaInicio = null; // para calcular semanas reales
 
 // 1️⃣ Diccionario de mapeo de nombres (llenalo con tus datos de Excel)
+const nombresInvalidos = [
+    "a",
+    "ss",
+    "up",
+    "do",
+    "eh will be janored and an amp",
+    "e do o",
+    "Lterfdelimiter",
+    "Teufelhunden",
+    "Teufelhunden ",
+    "a a a"
+];
 const nombreMap = {
     // "nombre_raw": "Nombre limpio"
     "aaron": "Aaron",
@@ -369,8 +381,10 @@ const nombreMap = {
     "foranan": "Foranan",
     "francescaromana": "FrancescaRomana",
     "gokce": "Gokce",
+    "gókce": "Gokce",
     "gratius": "Gratius",
     "gustavo": "Gustavo",
+    "ljeavby": "Jeavby",
     "jhanaukong": "Jhanau kong",
     "kari": "Kari",
     "keradred": "Keradred",
@@ -387,6 +401,7 @@ const nombreMap = {
     "maginad": "Maginad",
     "maladred": "Maladred",
     "malorius": "Malorius",
+    "maloríus": "Malorius",
     "malvalitocal": "Malvalito CAI",
     "malvalitocai": "Malvalito CAI",
     "malvalitoCAl": "Malvalito CAI",
@@ -401,6 +416,7 @@ const nombreMap = {
     "Matod": "Marod",
     "mauro": "Mauro",
     "meginan": "Meginan",
+    "Megíinan": "Meginan",
     "mogrel": "Mogrel",
     "mojora": "Mojora",
     "monamour": "Mon Amour",
@@ -412,11 +428,13 @@ const nombreMap = {
     "pocoyitaaa": "Pocoyitaaa",
     "purplerain": "Purple Rain",
     "PurpleRain": "Purple Rain",
+    "Purple Raín": "Purple Rain",
     "reneo": "Rengo",
     "roca": "Roca",
     "rufean": "Rufean",
     "rufeanil": "Rufean 2",
     "RufeanIl": "Rufean 2",
+    "Rufean Il": "Rufean 2",
     "saberflame": "Saberflame",
     "shallan": "Shallan",
     "sisusk": "SisusK",
@@ -441,28 +459,72 @@ const nombreMap = {
    
     // agregá todos los que tengas
 };
+function esNombreValido(nombre) {
+    if (!nombre) return false;
+
+    nombre = nombre.trim().toLowerCase();
+
+    // ❌ lista negra
+    if (nombresInvalidos.includes(nombre)) return false;
+
+    // ❌ muy corto
+    if (nombre.length < 3) return false;
+
+    // ❌ tiene números
+    if (/\d/.test(nombre)) return false;
+
+    // ❌ demasiadas palabras (ruido OCR)
+    if (nombre.split(" ").length > 3) return false;
+
+    return true;
+}
+
+function normalizarNombre(nombre) {
+    return nombreMap[nombre] || nombre;
+}
+function capitalizarNombre(nombre) {
+    return nombre
+        .split(" ")
+        .map(p => p.charAt(0).toUpperCase() + p.slice(1))
+        .join(" ");
+}
 
 // 2️⃣ Cargar JSON
 // 🔥 CARGA ÚNICA DE DATOS
 fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/datos.json")
-  .then(res => res.json())
-  .then(data => {
-
-    console.log("DATOS CRUDOS:", data);
+.then(res => res.json())
+.then(data => {
 
     datos = data;
 
-    // 🔹 LIMPIEZA DE NOMBRES
+    // 🔹 NORMALIZAR PRIMERO
+    datos = datos.map(d => {
+        let nombreRaw = (d.Jugador || "").trim().toLowerCase();
+
+        let nombre = normalizarNombre(nombreRaw);
+        nombre = capitalizarNombre(nombre);
+
+        return {
+            ...d,
+            Jugador: nombre,
+            _raw: nombreRaw // 👈 guardamos original para debug
+        };
+    });
+
+    // 🔹 FILTRAR DESPUÉS (IMPORTANTE)
     datos = datos.filter(d => {
-        let nombre = (d.Jugador || "").trim().toLowerCase();
+        const raw = d._raw;
 
-        if (nombre.length <= 1) return false;
-        if (nombre === "0") return false;
-        if (nombre === "-") return false;
+        // ✅ SI ESTÁ EN EL MAPA → NO SE ELIMINA
+        if (nombreMap[raw]) return true;
 
-        d.Jugador = nombreMap[nombre] || nombre;
+        const valido = esNombreValido(raw);
 
-        return true;
+        if (!valido) {
+            console.log("❌ eliminado:", raw);
+        }
+
+        return valido;
     });
 
     // 🔹 CALCULAR SEMANAS
@@ -475,7 +537,7 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
         d.semanaCalc = `Semana ${semana}`;
     });
 
-    // 🔹 LIMPIAR SELECTS (CLAVE para evitar duplicados)
+    // 🔹 SELECTS
     const jugadorSelect = document.getElementById("jugador");
     const semanaSelect = document.getElementById("semana");
     const semanaClanSelect = document.getElementById("semanaClan");
@@ -487,6 +549,8 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
     // 🔹 JUGADORES
     const jugadores = [...new Set(datos.map(d => d.Jugador))].sort();
 
+    console.log("👥 JUGADORES:", jugadores);
+
     jugadores.forEach(j => {
         const option = document.createElement("option");
         option.value = j;
@@ -494,24 +558,22 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
         jugadorSelect.appendChild(option);
     });
 
-    // 🔹 SEMANAS (ORDENADAS)
+    // 🔹 SEMANAS
     const semanas = [...new Set(datos.map(d => d.semanaCalc))]
         .sort((a, b) => {
-            const numA = parseInt(a.split(" ")[1]);
-            const numB = parseInt(b.split(" ")[1]);
-            return numA - numB;
+            return parseInt(a.split(" ")[1]) - parseInt(b.split(" ")[1]);
         });
 
     semanas.forEach(s => {
-        const option1 = document.createElement("option");
-        option1.value = s;
-        option1.textContent = s;
-        semanaSelect.appendChild(option1);
+        const opt1 = document.createElement("option");
+        opt1.value = s;
+        opt1.textContent = s;
+        semanaSelect.appendChild(opt1);
 
-        const option2 = document.createElement("option");
-        option2.value = s;
-        option2.textContent = s;
-        semanaClanSelect.appendChild(option2);
+        const opt2 = document.createElement("option");
+        opt2.value = s;
+        opt2.textContent = s;
+        semanaClanSelect.appendChild(opt2);
     });
 
     // 🔹 EVENTOS
@@ -525,6 +587,7 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
     mostrarRankingDiario();
 
 });
+
 
 // 5️⃣ Valores de cofres para calcular puntos
 const valoresCofre = {
