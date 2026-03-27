@@ -19,7 +19,7 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Tesseract-OCR\tesseract.exe"
 base_dir = os.path.dirname(__file__)
 ruta_imagen = os.path.join(base_dir, "boton_cofre.png")
 
-archivo_csv = r"C:\Users\netti\OneDrive\Escritorio\Proyecto_cofres_analisis-original\data\registro_cofres.csv"
+archivo_csv = r"C:\Users\netti\OneDrive\Escritorio\Proyecto_cofres_analisis\data\registro_cofres.csv"
 
 # Variable global de control
 corriendo = threading.Event()
