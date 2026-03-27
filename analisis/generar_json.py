@@ -23,3 +23,4 @@ with open(ruta_json, "w", encoding="utf-8") as f:
     json.dump(datos, f, indent=4, ensure_ascii=False)
 
 print("JSON generado")
+#python analisis/generar_json.py
