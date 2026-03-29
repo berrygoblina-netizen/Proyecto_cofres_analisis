@@ -115,17 +115,10 @@
         }
 
         /* Ranking */
-        .rankings {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 30px;
-            flex-wrap: wrap; /* para que en pantallas chicas se acomode */
-        }
+      
 
-        /* mismo estilo que el ranking original */
+/* mismo estilo que el ranking original */
        .ranking-box {
-            width: 300px;
 
             background: rgba(17, 17, 17, 0.85); /* 🔥 transparencia */
             backdrop-filter: blur(6px); /* 🔥 glass effect */
@@ -141,19 +134,18 @@
                 0 0 10px rgba(250, 204, 21, 0.1);
         }
 
-        /* título */
+/* título */
         .ranking-box h3 {
             color: #facc15;
             text-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
         }
-
-        /* lista */
+/* lista */
         .ranking-box ul {
             list-style: none;
             padding: 0;
         }
 
-        /* items */
+/* items */
        .ranking-box li {
             padding: 10px;
             margin-bottom: 8px;
@@ -222,6 +214,132 @@
             flex-direction: column;
             align-items: center;
         }
+        /* 🏗️ ESTRUCTURA DASHBOARD */
+       /* ESTO ORGANIZA EL DIBUJO QUE ME PASASTE */
+       /* 🏗️ ESTRUCTURA DASHBOARD (FORZADA) */
+        .grid-dashboard {
+            display: grid;
+            grid-template-columns: 1fr; /* Una columna en móvil */
+            gap: 20px;
+            margin-top: 20px;
+            align-items: start;
+        }
+
+/* En pantallas de PC (Escritorio) */
+        /* 🏗️ ESTRUCTURA DASHBOARD (CORREGIDA FINAL) */
+        @media (min-width: 1000px) {
+            .grid-dashboard {
+                display: grid;
+        /* Tres columnas: Rank 1 (320px), Rank 2 (320px) y el resto (1fr) */
+                grid-template-columns: 320px 320px 1fr; 
+                gap: 20px;
+                align-items: start; /* Alinea todo al techo */
+            }
+
+    /* Forzamos que los rankings ocupen las dos primeras columnas */
+            #box-riqueza { grid-column: 1; }
+            #box-cofres { grid-area: 1 / 2; } /* Fila 1 / Columna 2 */
+
+    /* Forzamos que la subcolumna de stats ocupe la tercera columna */
+            .subcol-stats {
+                grid-column: 3;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+    /* Ajustamos el tamaño del cuadrado de participación */
+            .porcentaje-container {
+                width: 300px !important;
+                height: 300px !important;
+                margin: 0 auto; /* Lo centra en su columna */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .grafico-container {
+                width: 100%;
+                min-height: 280px;
+            }
+        }
+    
+
+    /* 🟥 Estilos del PORCENTAJE (FORMA CUADRADA) */
+            .porcentaje-container {
+        /* Usamos Flex para centrar el contenido */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+    /* ... tus otros estilos ... */
+                border: 1px solid rgba(250, 204, 21, 0.4) !important;
+                box-shadow: 0 0 20px rgba(250, 204, 21, 0.1), inset 0 0 15px rgba(250, 204, 21, 0.05) !important;
+                transition: all 0.5s ease; /* Brillo neón suave */
+            
+        
+        /* 🔥 LA CLAVE DEL CUADRADO: Ancho y alto proporcionales */
+                width: 350px !important;  /* Ancho fijo para el cuadrado */
+                height: 350px !important; /* Alto fijo (cuadrado) */
+        
+        /* Margen automático para centrarlo si sobra espacio a los lados */
+                margin: 0 auto; 
+            }
+
+            #porcentajeEvento {
+                font-size: 5rem;
+                font-weight: bold;
+                text-shadow: 0 0 10px currentColor, 0 0 20px currentColor; /* Brilla del color que le asigne el JS */
+                margin: 10px 0;
+            }
+    
+
+/* IMPORTANTE: Mantener esto para limpiar márgenes */
+        .ranking-box {
+            margin: 0 !important;
+            backdrop-filter: blur(6px);
+        }
+        /* Estetica de las cajas */
+        .ranking-box {
+            background: rgba(30, 30, 30, 0.8);
+            border: 1px solid #444;
+            border-radius: 12px;
+            padding: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .btn-moderno {
+            background: linear-gradient(135deg, #444, #222);
+            border: 1px solid #666;
+            color: #eee;
+            padding: 8px 25px;
+            border-radius: 50px; /* Forma de píldora */
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .btn-moderno:hover {
+            background: linear-gradient(135deg, #ee9d07, #333);
+            border-color: #ffd700; /* Borde dorado al pasar el mouse */
+        }
+
+/* Responsivo para celulares */
+        /* Regla para que en móvil vuelva a ser una sola columna */
+        @media (max-width: 999px) {
+            .grid-dashboard {
+                display: flex;
+                flex-direction: column;
+            }
+            .porcentaje-container {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
     </style>
 
 
@@ -278,34 +396,50 @@
 
 <!-- 🏰 VISTA CLAN -->
 <div id="clanVista" class="pantalla contenedor oculto">
+    <div class="header-clan">
+        <h1>Estadísticas del Clan</h1>
+        <button class="btn-moderno" onclick="volverInicio()">⬅ Volver al Inicio</button>
+    </div>
 
-    <h1>Estadísticas del Clan</h1>
-
-    <button onclick="volverInicio()">⬅ Volver</button>
-
-    <label for="semanaClan">Semana:</label>
-        <select id="semanaClan" onchange="mostrarRankingDiario()">
-            <option value="" disabled selected hidden>Elegí semana</option>
-            <option value="Todas">Todas</option>
+    <div class="controles-clan">
+        <label for="semanaClan">Filtrar por Semana:</label>
+        <select id="semanaClan">
+            <option value="Todas">Todas las semanas</option>
         </select>
-    
-   <div class="rankings">
-    
-    <!-- 🏆 Ranking general -->
-    <div class="ranking-box">
+    </div>
+
+   <div class="grid-dashboard">
+    <div id="box-riqueza" class="ranking-box">
         <h3>🏆 Ranking Riqueza</h3>
         <ul id="ranking"></ul>
     </div>
 
-    <!-- ⚔️ Ranking diario -->
-    <div class="ranking-box">
+    <div id="box-cofres" class="ranking-box">
         <h3>⚔️ Ranking Cofres</h3>
         <ul id="rankingDiario"></ul>
     </div>
 
+    <div class="subcol-stats">  
+
+    <div class="ranking-box grafico-container">
+        <h3>📊 Actividad Diaria</h3>
+        <div style="height: 220px;">
+            <canvas id="graficoDiario"></canvas>
+        </div>
+    </div>
+
+    <div class="ranking-box porcentaje-container">
+        <h3>Ascenso de los Antiguos</h3>
+        <p>Participación del Clan</p>
+        <div id="porcentajeEvento">0%</div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
 </div>
 
-</div>
+
 
 
 <script>
@@ -607,13 +741,18 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
 
     // 🔹 EVENTOS
     semanaClanSelect.addEventListener("change", () => {
+        const valorSeleccionado = semanaClanSelect.value;
         mostrarRanking();
         mostrarRankingDiario();
+        dibujarGraficoActividad();
+        calcularParticipacionEvento(valorSeleccionado);
     });
 
     // 🔥 INICIAL
     mostrarRanking();
     mostrarRankingDiario();
+    dibujarGraficoActividad()
+    calcularParticipacionEvento("Todas"); // Carga inicial
 
 });
 
@@ -1215,30 +1354,99 @@ function mostrarRankingDiario() {
         lista.appendChild(li);
     });
 }
-function dibujarGrafico(ranking) {
-    const labels = ranking.map(r => r[0]);
-    const data = ranking.map(r => r[1]);
+let miGrafico = null; // Para que no se encimen los gráficos al cambiar de semana
 
-    new Chart(document.getElementById("graficoClan"), {
+function dibujarGraficoActividad() {
+    const canvas = document.getElementById('graficoDiario');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    const semanaSeleccionada = document.getElementById("semanaClan").value;
+    const semanaNum = semanaSeleccionada === "Todas" ? "Todas" : Number(semanaSeleccionada);
+
+    // 1. Filtrar los datos por la semana que elegiste
+    const filtrados = datos.filter(d => 
+        semanaNum === "Todas" || d.semanaCalc === semanaNum
+    );
+
+    // 2. Contar cofres por día
+    const conteo = {};
+    filtrados.forEach(d => {
+        const fecha = d.Fecha.split(" ")[0]; // Extrae YYYY-MM-DD
+        conteo[fecha] = (conteo[fecha] || 0) + 1;
+    });
+
+    // 3. Ordenar fechas y preparar etiquetas
+    const labels = Object.keys(conteo).sort();
+    const valores = labels.map(f => conteo[f]);
+
+    // 4. Destruir gráfico anterior si existe
+    if (miGrafico) miGrafico.destroy();
+
+    // 5. Dibujar
+    miGrafico = new Chart(ctx, {
         type: "bar",
         data: {
             labels: labels,
             datasets: [{
-                label: "Puntos",
-                data: data
+                label: "Cofres por día",
+                data: valores,
+                backgroundColor: "rgba(255, 215, 0, 0.6)", // Dorado transparente
+                borderColor: "rgba(255, 215, 0, 1)",
+                borderWidth: 1
             }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: { beginAtZero: true, ticks: { color: "#fff" } },
+                x: { ticks: { color: "#fff" } }
+            },
+            plugins: {
+                legend: { labels: { color: "#fff" } }
+            }
         }
     });
 }
-function actividadDiaria() {
-    const dias = {};
+function calcularParticipacionEvento(semana) {
+    const elementoPorcentaje = document.getElementById("porcentajeEvento");
+    if (!elementoPorcentaje || !datos.length) return;
 
-    datos.forEach(d => {
-        const dia = d.Fecha.split(" ")[0];
-        dias[dia] = (dias[dia] || 0) + 1;
+    const semanaNum = (semana === "Todas" || !semana) ? "Todas" : Number(semana);
+
+    // 1. Calculamos el 100%: ¿Cuántos jugadores UNICOS hay en total esta semana?
+    const todosLosJugadoresSemana = datos.filter(d => 
+        semanaNum === "Todas" || d.semanaCalc === semanaNum
+    );
+    const totalMiembrosReales = [...new Set(todosLosJugadoresSemana.map(d => d.Jugador))].length;
+
+    // 2. Calculamos los PARTICIPANTES: ¿Cuántos de esos hicieron el evento "Ascenso"?
+    const registrosEvento = todosLosJugadoresSemana.filter(d => {
+        const nombreCofre = d.Cofre ? d.Cofre.toLowerCase() : "";
+        return nombreCofre.includes("ascenso");
     });
+    const participantesEvento = [...new Set(registrosEvento.map(r => r.Jugador))].length;
 
-    return dias;
+    // 3. Cálculo final (Si el clan tiene 96 y participaron 96, dará 100%)
+    let porcentaje = 0;
+    if (totalMiembrosReales > 0) {
+        porcentaje = Math.round((participantesEvento / totalMiembrosReales) * 100);
+    }
+
+    // 4. Mostrar con el efecto Glow y colores
+    elementoPorcentaje.textContent = `${porcentaje}%`;
+
+    // Ajuste de colores neón
+    if (porcentaje >= 90) {
+        elementoPorcentaje.style.color = "#47ff78"; // Verde (Excelente)
+    } else if (porcentaje >= 60) {
+        elementoPorcentaje.style.color = "#facc15"; // Amarillo (Aceptable)
+    } else {
+        elementoPorcentaje.style.color = "#ff4747"; // Rojo (Bajo)
+    }
+
+    console.log(`Clan Total: ${totalMiembrosReales} | Participaron: ${participantesEvento} | %: ${porcentaje}`);
 }
 console.log([...new Set(datos.map(d => d.Jugador))]);
 // 7️⃣ Eventos
@@ -1247,4 +1455,4 @@ document.getElementById("semana").addEventListener("change", mostrarCofres);
 </script>
 
 </body>
-</html>
+</html> 
