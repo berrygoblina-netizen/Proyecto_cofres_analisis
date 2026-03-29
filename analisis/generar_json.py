@@ -5,9 +5,10 @@ import os
 
 base_dir = os.path.dirname(__file__)
 
-ruta_csv = os.path.join(base_dir, "..", "data", "registro_cofres.csv")
-ruta_json = os.path.join(base_dir, "..", "data", "datos.json")
+ruta_csv = os.path.normpath(os.path.join(base_dir, "..", "data", "registro_cofres.csv"))
+ruta_json = os.path.normpath(os.path.join(base_dir, "..", "dashboard", "data", "datos.json"))
 print("Buscando CSV en:", ruta_csv)
+
 df = pd.read_csv(ruta_csv, sep=";")
 # 🔥 eliminar filas con datos vacíos
 df = df.dropna(subset=["Jugador", "Cofre"])

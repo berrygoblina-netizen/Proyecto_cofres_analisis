@@ -481,7 +481,7 @@ function esNombreValido(nombre) {
     if (/\d/.test(nombre)) return false;
 
     // ❌ demasiadas palabras (ruido OCR)
-    if (nombre.split(" ").length > 3) return false;
+    if (nombre.split(" ").length > 6) return false;
 
     return true;
 }
@@ -490,7 +490,9 @@ function limpiarTexto(texto) {
     return texto
         .toLowerCase()
         .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[\u0300-\u036f]/g, "") // quitar acentos
+        .replace(/["']/g, "")            // 🔥 quitar comillas
+        .replace(/\s+/g, "")             // quitar espacios
         .trim();
 }
 
@@ -505,6 +507,15 @@ function capitalizarNombre(nombre) {
         .map(p => p.charAt(0).toUpperCase() + p.slice(1))
         .join(" ");
 }
+function normalizarCofre(nombreCofre) {
+    if (!nombreCofre) return "Desconocido";
+    
+    // 1. Limpieza básica (quita comillas, acentos, etc)
+    const limpio = limpiarTexto(nombreCofre); 
+    
+    // 2. Busca en tu mapa (ej: "ascensodelosantiguos" -> "Evento Ascenso de los Antiguos")
+    return cofreMap[limpio] || limpio; 
+}
 
 // 2️⃣ Cargar JSON
 // 🔥 CARGA ÚNICA DE DATOS
@@ -515,16 +526,19 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
     datos = data;
 
     // 🔹 NORMALIZAR PRIMERO
-    datos = datos.map(d => {
+    datos = data.map(d => {
+    // Normalizar Jugador (Ya lo tienes)
         let nombreRaw = (d.Jugador || "").trim().toLowerCase();
+        let nombreJugador = capitalizarNombre(normalizarNombre(nombreRaw));
 
-        let nombre = normalizarNombre(nombreRaw);
-        nombre = capitalizarNombre(nombre);
+    // --- NUEVO: Normalizar Cofre ---
+        let nombreCofreLimpio = normalizarCofre(d.Cofre);
 
         return {
-            ...d,
-            Jugador: nombre,
-            _raw: nombreRaw // 👈 guardamos original para debug
+        ...d,
+        Jugador: nombreJugador,
+        Cofre: nombreCofreLimpio, // 👈 EL COFRE YA QUEDA LIMPIO PARA SIEMPRE
+        _raw: nombreRaw
         };
     });
 
@@ -551,7 +565,7 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
     datos.forEach(d => {
         const fechaD = new Date(d.Fecha);
         const semana = Math.floor((fechaD - fechaInicio) / (1000 * 60 * 60 * 24 * 7)) + 1;
-        d.semanaCalc = `Semana ${semana}`;
+        d.semanaCalc = semana; // ahora es número
     });
 
     // 🔹 SELECTS
@@ -577,19 +591,17 @@ fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/dato
 
     // 🔹 SEMANAS
     const semanas = [...new Set(datos.map(d => d.semanaCalc))]
-        .sort((a, b) => {
-            return parseInt(a.split(" ")[1]) - parseInt(b.split(" ")[1]);
-        });
+        .sort((a, b) => a - b);
 
     semanas.forEach(s => {
         const opt1 = document.createElement("option");
-        opt1.value = s;
-        opt1.textContent = s;
+        opt1.value = s; // número real
+        opt1.textContent = `Semana ${s}`; // lo que ve el usuario
         semanaSelect.appendChild(opt1);
 
         const opt2 = document.createElement("option");
         opt2.value = s;
-        opt2.textContent = s;
+        opt2.textContent = `Semana ${s}`;
         semanaClanSelect.appendChild(opt2);
     });
 
@@ -688,6 +700,7 @@ const valoresCofre = {
     "Torneo Carrera por la Autoridad": 1000,
    
     "Escuadrón Épico de Fenrir": 1000,
+    "Escuadrón Épico de la Quimera": 1000,
     "Escuadrón Épico de Jormungandr": 1000,
     "Escuadrón Épico de los Antiguos": 1000,
     "Evento Ascenso de los Antiguos": 100,
@@ -774,12 +787,14 @@ const cofreMap = {
     "Criptaepicadenivel15": "Cripta épica de nivel 15",
     "Criptapicadenivel15": "Cripta épica de nivel 15",
     "criptapicadenivel15": "Cripta épica de nivel 15",
+    "criptaepicadenivel15": "Cripta épica de nivel 15",
     "crípta épica de nivel 15": "Cripta épica de nivel 15",
     "cripta épica de nivel 15": "Cripta épica de nivel 15",
 
     "Criptaepicadenivel20": "Cripta épica de nivel 20",
     "Criptapicadenivel20": "Cripta épica de nivel 20",
     "criptapicadenivel20": "Cripta épica de nivel 20",
+    "criptaepicadenivel20": "Cripta épica de nivel 20",
     "crípta épica de nivel 20": "Cripta épica de nivel 20",
     "cripta épica de nivel 20": "Cripta épica de nivel 20",
 
@@ -788,8 +803,11 @@ const cofreMap = {
     "criptapicadenivel25": "Cripta épica de nivel 25",
     "crípta épica de nivel 25": "Cripta épica de nivel 25",
     "cripta épica de nivel 25": "Cripta épica de nivel 25",
+    "criptaepicadenivel25": "Cripta épica de nivel 25",
+
 
     "Criptaepicadenivel30": "Cripta épica de nivel 30",
+    "criptaepicadenivel30": "Cripta épica de nivel 30",
     "criptapicadenivel30": "Cripta épica de nivel 30",
     "crípta épica de nivel 30": "Cripta épica de nivel 30",
     "Criptapicadenivel30": "Cripta épica de nivel 30",
@@ -799,6 +817,7 @@ const cofreMap = {
     "crípta épica de nivel 35": "Cripta épica de nivel 35",
     "Criptapicadenivel35": "Cripta épica de nivel 35",
     "cripta épica de nivel 35": "Cripta épica de nivel 35",
+    "criptaepicadenivel35": "Cripta épica de nivel 35",
 
     "Ciudadeladenivel10": "Ciudadela de nivel 10",
     "ciudadeladenivel10": "Ciudadela de nivel 10",
@@ -881,29 +900,41 @@ const cofreMap = {
     "bvedadelosantiguosdenivel1014": "Bóveda de los Antiguos de nivel 10-14",
     "bóveda de los antiguos de nivel 10-14": "Bóveda de los Antiguos de nivel 10-14",
     "bvedadelosantiguosdenivel2024": "Bóveda de los Antiguos de nivel 20-24",
+    "bovedadelosantiguosdenivel20-24": "Bóveda de los Antiguos de nivel 20-24",
     "bóveda de los antiguos de nivel 20-24": "Bóveda de los Antiguos de nivel 20-24",
     "bvedadelosantiguosdenivel2529": "Bóveda de los Antiguos de nivel 25-29",
+    "bovedadelosantiguosdenivel25-29": "Bóveda de los Antiguos de nivel 25-29",
     "bóveda de los antiguos de nivel 25-29": "Bóveda de los Antiguos de nivel 25-29",
     "bvedadelosantiguosdenivel3034": "Bóveda de los Antiguos de nivel 30-34",
+    "bovedadelosantiguosdenivel30-34": "Bóveda de los Antiguos de nivel 30-34",
     "bóveda de los antiguos de nivel 30-34": "Bóveda de los Antiguos de nivel 30-34",
+    "bovedadelosantiguosdenivel35-39": "Bóveda de los Antiguos de nivel 35-39",
     "bvedadelosantiguosdenivel3539": "Bóveda de los Antiguos de nivel 35-39",
     "bóveda de los antiguos de nivel 35-39": "Bóveda de los Antiguos de nivel 35-39",
     "bvedadelosantiguosdenivel4044": "Bóveda de los Antiguos de nivel 40-44",   
+    "bovedadelosantiguosdenivel40-44": "Bóveda de los Antiguos de nivel 40-44",
     "bóveda de los antiguos de nivel 40-44": "Bóveda de los Antiguos de nivel 40-44",
+    
     "tiendadehermes": "Tienda de Hermes",
     "Tiendadehermes": "Tienda de Hermes",
     "Cofreimitador": "Cofre Imitador",
     "cofreimitador": "Cofre Imitador",
     "escuadrnrnicodeasaltonv2024": "Escuadrón Rúnico de Asalto de nivel 20-24",
+    "escuadronrunicodeasaltodenivel20-24": "Escuadrón Rúnico de Asalto de nivel 20-24",
     "escuadrón rúnico de asalto nv. 20-24": "Escuadrón Rúnico de Asalto de nivel 20-24",
     "escuadrnrnicodeasaltonv2529": "Escuadrón Rúnico de Asalto de nivel 25-29",
     "escuadrón rúnico de asalto nv. 25-29": "Escuadrón Rúnico de Asalto de nivel 25-29",
+    "escuadronrunicodeasaltodenivel25-29": "Escuadrón Rúnico de Asalto de nivel 25-29",
     "escuadrnrnicodeasaltonv3034": "Escuadrón Rúnico de Asalto de nivel 30-34",
+    "escuadronrunicodeasaltodenivel30-34": "Escuadrón Rúnico de Asalto de nivel 30-34",
     "escuadrón rúnico de asalto nv. 30-34": "Escuadrón Rúnico de Asalto de nivel 30-34",
     "“escuadrón rúnico de asalto nv. 30-34": "Escuadrón Rúnico de Asalto de nivel 30-34",
     "escuadrnrnicodeasaltonv3539": "Escuadrón Rúnico de Asalto de nivel 35-39",
+    "escuadronrunicodeasaltodenivel35-39": "Escuadrón Rúnico de Asalto de nivel 35-39",
+    "escuadrón rúnico de asalto nv. 35-39": "Escuadrón Rúnico de Asalto de nivel 35-39",
     "escuadrón rúnico de asalto nv. 35-39": "Escuadrón Rúnico de Asalto de nivel 35-39",
     "escuadrnrnicodeasaltonv4044": "Escuadrón Rúnico de Asalto de nivel 40-44",
+    "escuadronrunicodeasaltodenivel40-44": "Escuadrón Rúnico de Asalto de nivel 40-44",
     "escuadrón rúnico de asalto nv. 40-44": "Escuadrón Rúnico de Asalto de nivel 40-44",
 
     "Escuadrnrnicodeasaltonv2024": "Escuadrón Rúnico de Asalto de nivel 20-24",
@@ -924,11 +955,17 @@ const cofreMap = {
     "torneocarreraporlaautoridad": "Torneo Carrera por la Autoridad",
     "arena": "Arena",
     "criptadeltrtaronivel10": "Cripta del Tártaro de nivel 10",
+    "criptadeltartarodenivel10": "Cripta del Tártaro de nivel 10",
     "criptadeltrtaronivel15": "Cripta del Tártaro de nivel 15",
+    "criptadeltartarodenivel15": "Cripta del Tártaro de nivel 15",
     "criptadeltrtaronivel20": "Cripta del Tártaro de nivel 20",
+    "criptadeltartarodenivel20": "Cripta del Tártaro de nivel 20",
     "criptadeltrtaronivel25": "Cripta del Tártaro de nivel 25",
+    "criptadeltartarodenivel25": "Cripta del Tártaro de nivel 25",
     "criptadeltrtaronivel30": "Cripta del Tártaro de nivel 30",
+    "criptadeltartarodenivel30": "Cripta del Tártaro de nivel 30",
     "criptadeltrtaronivel35": "Cripta del Tártaro de nivel 35",
+    "criptadeltartarodenivel35": "Cripta del Tártaro de nivel 35",
     "escuadrnpicodefenrir": "Escuadrón Épico de Fenrir",
     "escuadrnpicodejormungandr": "Escuadrón Épico de Jormungandr",
     "escuadrnpicodejrmungandr": "Escuadrón Épico de Jormungandr",
@@ -936,12 +973,16 @@ const cofreMap = {
     "escuadrnpicodemuertosvivientes ": "Escuadrón Épico de los Muertos Vivientes",
 
     "escuadrnpicodelosantiguos": "Escuadrón Épico de los Antiguos",
+    "escuadronepicodelosantiguos": "Escuadrón Épico de los Antiguos",
     "eventoascensodelosantiguos": "Evento Ascenso de los Antiguos",
+    "escuadrón épico de la quimera": "Escuadrón Épico de la Quimera",
+    "escuadronepicodelaquimera": "Escuadrón Épico de la Quimera",
     "eventobotindelterror": "Evento Botín del Terror",
     "eventobotindelterrar": "Evento Botín del Terror",
     "eventobotndelterrar": "Evento Botín del Terror",
     "eventobotndelterror": "Evento Botín del Terror",
     "invocacindeauguriososcuros": "Invocación de Auguriosos Oscuros",
+    "invocaciondeauguriosososcuros": "Invocación de Auguriosos Oscuros",
     "eventoauguriososcuros": "Evento Augurios Oscuros",
     "eventopruebasdelolimpo": "Evento Pruebas del Olimpo",
     "j Arena": "Arena",
@@ -983,8 +1024,18 @@ const tipoCofre = {
     "Evento Pruebas del Olimpo": "evento",
     "Evento Botín del Terror": "evento",
     "Evento Ascenso de los Antiguos": "evento",
+    "ascensodelosantiguos": "evento", // 👈 Agrega esta línea
+    "ascenso de los antiguos": "evento", // 👈 Agrega esta línea
     "Torneo Batalla por el Trono": "evento",
     "Torneo Carrera por la Autoridad": "evento",
+    "Escuadrón Rúnico de Asalto de nivel 20-24": "evento",
+    "Escuadrón Rúnico de Asalto de nivel 25-29": "evento",
+    "Escuadrón Rúnico de Asalto de nivel 30-34": "evento",
+    "Escuadrón Rúnico de Asalto de nivel 35-39": "evento",
+    "Escuadrón Rúnico de Asalto de nivel 40-44": "evento",
+    "Escuadrón Épico de Fenrir": "evento",
+    "Escuadrón Épico de Jormungandr": "evento",
+    "Escuadrón Épico de los Antiguos": "evento",    
 };
 
 function mostrarVista(vista) {
@@ -1009,6 +1060,9 @@ function volverInicio() {
 }
 // 6️⃣ Función para mostrar resultados filtrados y sumar puntos
 function mostrarCofres(tipo = "todos") {
+    
+    console.log(datos.filter(d => d.semanaCalc === 4));
+    console.log([...new Set(datos.map(d => d.semanaCalc))]);
 
     const jugador = document.getElementById("jugador").value;
     const semana = document.getElementById("semana").value;
@@ -1025,23 +1079,34 @@ function mostrarCofres(tipo = "todos") {
 
     // 🔹 2. FILTRAR POR SEMANA
     if (semana !== "Todas") {
-        filtrados = filtrados.filter(d => d.semanaCalc === semana);
+    const semanaNum = Number(semana.replace("Semana ", ""));
+    filtrados = filtrados.filter(d => d.semanaCalc === semanaNum);
     }
+
+
 
     // 🔥 3. FILTRAR POR TIPO (ACA ESTABA TU ERROR)
-    if (tipo === "diario") {
+   // 🔥 REEMPLAZO COMPLETO: Lógica de filtrado por tipo (Diario / Evento)
+    if (tipo !== "todos") {
         filtrados = filtrados.filter(d => {
-            let cofreRaw = d.Cofre.trim().toLowerCase();
-            let cofreLimpio = cofreMap[cofreRaw] || cofreRaw;
-            return tipoCofre[cofreLimpio] === "diario";
-        });
-    }
+        // 1. Usamos tu función para obtener el nombre oficial (ej: "Evento Ascenso de los Antiguos")
+            const nombreOficial = normalizarCofre(d.Cofre);
+            const nombreMin = nombreOficial.toLowerCase();
 
-    if (tipo === "evento") {
-        filtrados = filtrados.filter(d => {
-            let cofreRaw = d.Cofre.trim().toLowerCase();
-            let cofreLimpio = cofreMap[cofreRaw] || cofreRaw;
-            return tipoCofre[cofreLimpio] === "evento";
+        // 2. Intentamos saber el tipo por tu diccionario tipoCofre
+            let tipoDetectado = tipoCofre[nombreOficial];
+
+        // 3. FALLBACK INTELIGENTE: Si no está en el diccionario, usamos palabras clave
+            if (!tipoDetectado) {
+                const esDiario = nombreMin.includes("cripta") || 
+                             nombreMin.includes("arena") || 
+                             nombreMin.includes("ciudad");
+            
+                tipoDetectado = esDiario ? "diario" : "evento";
+            }
+
+        // 4. Retornamos true si coincide con lo que el usuario busca (diario o evento)
+            return tipoDetectado === tipo;
         });
     }
 
@@ -1050,8 +1115,10 @@ function mostrarCofres(tipo = "todos") {
     let riquezaTotal = 0;
 
     filtrados.forEach(d => {
-        let cofreRaw = d.Cofre.trim().toLowerCase();
+        let cofreRaw = limpiarTexto(d.Cofre);
         let cofreLimpio = cofreMap[cofreRaw] || cofreRaw;
+        
+        console.log("CLAVE FINAL:", cofreLimpio);
 
         conteo[cofreLimpio] = (conteo[cofreLimpio] || 0) + 1;
         riquezaTotal += valoresCofre[cofreLimpio] || 0;
@@ -1091,64 +1158,56 @@ function mostrarRanking() {
             if (index === 1) li.style.border = "2px solid silver";
             if (index === 2) li.style.border = "2px solid #cd7f32"; // bronce
         });
-    console.log("ejecutando ranking diario");
+    
 
 }
 function rankingClan(semana) {
     const ranking = {};
+    // Convertimos la semana del select a número para que la comparación sea real
+    const semanaNum = semana === "Todas" ? "Todas" : Number(semana);
 
     datos.forEach(d => {
-        if (semana !== "Todas" && d.semanaCalc !== semana) return;
+        if (semanaNum !== "Todas" && d.semanaCalc !== semanaNum) return;
 
-        let cofreRaw = d.Cofre.trim().toLowerCase();
-        let cofreLimpio = cofreMap[cofreRaw] || cofreRaw;
-
-        let puntos = valoresCofre[cofreLimpio] || 0;
+        // Usamos tu función normalizarCofre que ya es robusta
+        let cofreOficial = normalizarCofre(d.Cofre);
+        let puntos = valoresCofre[cofreOficial] || 0;
 
         ranking[d.Jugador] = (ranking[d.Jugador] || 0) + puntos;
     });
 
-    return Object.entries(ranking)
-        .sort((a, b) => b[1] - a[1]);
+    return Object.entries(ranking).sort((a, b) => b[1] - a[1]);
 }
-function mostrarRankingDiario() {
 
+function mostrarRankingDiario() {
     const lista = document.getElementById("rankingDiario");
+    if (!lista) return;
     lista.innerHTML = "";
 
     let semanaSeleccionada = document.getElementById("semanaClan").value;
     if (!semanaSeleccionada) return;
 
+    // Convertimos a número
+    const semanaNum = semanaSeleccionada === "Todas" ? "Todas" : Number(semanaSeleccionada);
     let puntosPorJugador = {};
 
     datos.forEach(registro => {
+        if (semanaNum !== "Todas" && registro.semanaCalc !== semanaNum) return;
 
-        let tipo = (registro.Cofre || "").toLowerCase();
-        let semana = registro.semanaCalc;
-
-        // 👇 FILTRO POR SEMANA
-        if (semanaSeleccionada !== "Todas" && semana !== semanaSeleccionada) {
-            return;
-        }
+        // Usamos limpiarTexto para detectar diarios sin importar el OCR
+        let nombreLimpio = limpiarTexto(registro.Cofre);
 
         if (
-            tipo.includes("arena") ||
-            tipo.includes("cripta") ||
-            tipo.includes("ciudad")
+            nombreLimpio.includes("arena") ||
+            nombreLimpio.includes("cripta") ||
+            nombreLimpio.includes("ciudad")
         ) {
-
             let jugador = registro.Jugador || "Desconocido";
-
-            if (!puntosPorJugador[jugador]) {
-                puntosPorJugador[jugador] = 0;
-            }
-
-            puntosPorJugador[jugador] += 1;
+            puntosPorJugador[jugador] = (puntosPorJugador[jugador] || 0) + 1;
         }
     });
 
-    let ranking = Object.entries(puntosPorJugador)
-        .sort((a, b) => b[1] - a[1]);
+    let ranking = Object.entries(puntosPorJugador).sort((a, b) => b[1] - a[1]);
 
     ranking.forEach(([jugador, puntos]) => {
         let li = document.createElement("li");
