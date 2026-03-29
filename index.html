@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
         
@@ -140,24 +141,16 @@
             text-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
         }
 /* lista */
-        .ranking-box ul {
-            list-style: none;
-            padding: 0;
-        }
-
-/* items */
-       .ranking-box li {
-            padding: 10px;
+        /* Listas y Items */
+        .ranking-box ul { list-style: none; padding: 0; }
+        .ranking-box li {
+            padding: 12px 10px;
             margin-bottom: 8px;
-
             background: linear-gradient(90deg, #1a1a1a, #111);
-
             border-radius: 8px;
-
             display: flex;
             justify-content: space-between;
-
-            transition: 0.2s;
+            font-size: 1.1rem; /* Letra más grande */
         }
 
         .ranking-box li:first-child {
@@ -225,45 +218,34 @@
             align-items: start;
         }
 
-/* En pantallas de PC (Escritorio) */
-        /* 🏗️ ESTRUCTURA DASHBOARD (CORREGIDA FINAL) */
-        @media (min-width: 1000px) {
+/* --- RESPONSIVE CELULAR (2 Columnas) --- */
+        @media (max-width: 999px) {
             .grid-dashboard {
                 display: grid;
-        /* Tres columnas: Rank 1 (320px), Rank 2 (320px) y el resto (1fr) */
-                grid-template-columns: 320px 320px 1fr; 
-                gap: 20px;
-                align-items: start; /* Alinea todo al techo */
+                grid-template-columns: 1fr 1fr; /* 2 Columnas fijas */
+                gap: 10px;
             }
-
-    /* Forzamos que los rankings ocupen las dos primeras columnas */
-            #box-riqueza { grid-column: 1; }
-            #box-cofres { grid-area: 1 / 2; } /* Fila 1 / Columna 2 */
-
-    /* Forzamos que la subcolumna de stats ocupe la tercera columna */
+    
             .subcol-stats {
-                grid-column: 3;
+                grid-column: 1 / span 2; /* Gráfico y porcentaje ocupan todo el ancho */
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
+                gap: 15px;
             }
 
-    /* Ajustamos el tamaño del cuadrado de participación */
             .porcentaje-container {
-                width: 300px !important;
-                height: 300px !important;
-                margin: 0 auto; /* Lo centra en su columna */
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .grafico-container {
                 width: 100%;
-                min-height: 280px;
+                max-width: 280px;
+                aspect-ratio: 1/1;
+                margin: 0 auto;
             }
         }
+
+        .grafico-container {
+            width: 100%;
+            min-height: 280px;
+        }
+
     
 
     /* 🟥 Estilos del PORCENTAJE (FORMA CUADRADA) */
@@ -296,18 +278,21 @@
             }
     
 
-/* IMPORTANTE: Mantener esto para limpiar márgenes */
+/* --- ESTILO DE LAS CAJAS --- */
         .ranking-box {
-            margin: 0 !important;
+            background: rgba(17, 17, 17, 0.85);
             backdrop-filter: blur(6px);
-        }
-        /* Estetica de las cajas */
-        .ranking-box {
-            background: rgba(30, 30, 30, 0.8);
-            border: 1px solid #444;
-            border-radius: 12px;
+            border: 1px solid rgba(250, 204, 21, 0.2);
+            border-radius: 15px;
             padding: 15px;
-            backdrop-filter: blur(5px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.9);
+        }
+
+        .ranking-box h3 {
+            color: #facc15;
+            text-align: center;
+            margin-top: 0;
+            text-shadow: 0 0 10px rgba(250, 204, 21, 0.5);
         }
 
         .btn-moderno {
@@ -328,17 +313,30 @@
             border-color: #ffd700; /* Borde dorado al pasar el mouse */
         }
 
-/* Responsivo para celulares */
-        /* Regla para que en móvil vuelva a ser una sola columna */
-        @media (max-width: 999px) {
+/* --- DISEÑO PARA PC (ESCRITORIO) --- */
+        /* --- DISEÑO PC (3 Columnas) --- */
+        @media (min-width: 1000px) {
             .grid-dashboard {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: 320px 320px 1fr;
+                gap: 20px;
+                align-items: start;
             }
-            .porcentaje-container {
-                width: 100% !important;
-                height: auto !important;
-            }
+            .subcol-stats { grid-column: 3; }
+            .porcentaje-container { width: 320px; height: 320px; margin: 0 auto; }
+        }
+
+        /* Clase para los que alcanzan el objetivo */
+        .objetivo-cumplido {
+            border: 2px solid #47ff78 !important; /* Verde Neón */
+            box-shadow: 0 0 10px rgba(71, 255, 120, 0.3) !important;
+            background: linear-gradient(90deg, #1a3a1a, #111) !important; /* Un toque verdoso al fondo */
+        }
+
+/* Para que el número de cofres también resalte en esos casos */
+        .objetivo-cumplido span {
+            color: #47ff78;
+            font-weight: bold;
         }
     </style>
 
@@ -422,17 +420,17 @@
     <div class="subcol-stats">  
 
     <div class="ranking-box grafico-container">
-        <h3>📊 Actividad Diaria</h3>
-        <div style="height: 220px;">
+        <h3>📊 Actividad Diaria-Semana</h3>
+        <div style="height: 250px; position:relative;">
             <canvas id="graficoDiario"></canvas>
         </div>
     </div>
 
     <div class="ranking-box porcentaje-container">
-        <h3>Ascenso de los Antiguos</h3>
-        <p>Participación del Clan</p>
-        <div id="porcentajeEvento">0%</div>
-    </div>
+    <h3>Ascenso de los Antiguos</h3>
+    <div id="porcentajeEvento">0%</div>
+    <small id="detalleParticipacion" style="color: #aaa; margin-top: 5px; font-size: 0.9rem;"></small>
+</div>
 </div>
             </div>
         </div>
@@ -1348,9 +1346,17 @@ function mostrarRankingDiario() {
 
     let ranking = Object.entries(puntosPorJugador).sort((a, b) => b[1] - a[1]);
 
-    ranking.forEach(([jugador, puntos]) => {
-        let li = document.createElement("li");
-        li.innerHTML = `<span>${jugador}</span> <span>${puntos}</span>`;
+    ranking.forEach(jugador => {
+        const li = document.createElement("li");
+        const nombre = jugador[0];
+        const cantidad = jugador[1];
+
+        li.innerHTML = `<span>${nombre}</span> <span>${cantidad} cofres</span>`;
+
+        // 🔥 LA CLAVE: Si supera o iguala los 70, le ponemos la clase verde
+        if (cantidad >= 70) {
+            li.classList.add("objetivo-cumplido");
+        }
         lista.appendChild(li);
     });
 }
@@ -1411,42 +1417,43 @@ function dibujarGraficoActividad() {
 }
 function calcularParticipacionEvento(semana) {
     const elementoPorcentaje = document.getElementById("porcentajeEvento");
-    if (!elementoPorcentaje || !datos.length) return;
+    const elementoDetalle = document.getElementById("detalleParticipacion");
+    if (!elementoPorcentaje) return;
 
     const semanaNum = (semana === "Todas" || !semana) ? "Todas" : Number(semana);
 
-    // 1. Calculamos el 100%: ¿Cuántos jugadores UNICOS hay en total esta semana?
+    // 1. Total de miembros únicos en esa semana
     const todosLosJugadoresSemana = datos.filter(d => 
         semanaNum === "Todas" || d.semanaCalc === semanaNum
     );
     const totalMiembrosReales = [...new Set(todosLosJugadoresSemana.map(d => d.Jugador))].length;
 
-    // 2. Calculamos los PARTICIPANTES: ¿Cuántos de esos hicieron el evento "Ascenso"?
+    // 2. Participantes del evento
     const registrosEvento = todosLosJugadoresSemana.filter(d => {
         const nombreCofre = d.Cofre ? d.Cofre.toLowerCase() : "";
         return nombreCofre.includes("ascenso");
     });
     const participantesEvento = [...new Set(registrosEvento.map(r => r.Jugador))].length;
 
-    // 3. Cálculo final (Si el clan tiene 96 y participaron 96, dará 100%)
-    let porcentaje = 0;
-    if (totalMiembrosReales > 0) {
-        porcentaje = Math.round((participantesEvento / totalMiembrosReales) * 100);
-    }
+    // 3. Cálculo
+    let porcentaje = totalMiembrosReales > 0 ? Math.round((participantesEvento / totalMiembrosReales) * 100) : 0;
 
-    // 4. Mostrar con el efecto Glow y colores
+    // 4. Mostrar Datos
     elementoPorcentaje.textContent = `${porcentaje}%`;
-
-    // Ajuste de colores neón
-    if (porcentaje >= 90) {
-        elementoPorcentaje.style.color = "#47ff78"; // Verde (Excelente)
-    } else if (porcentaje >= 60) {
-        elementoPorcentaje.style.color = "#facc15"; // Amarillo (Aceptable)
-    } else {
-        elementoPorcentaje.style.color = "#ff4747"; // Rojo (Bajo)
+    
+    // Mostramos el "X de Y miembros"
+    if (elementoDetalle) {
+        elementoDetalle.textContent = `${participantesEvento} de ${totalMiembrosReales} miembros activos`;
     }
 
-    console.log(`Clan Total: ${totalMiembrosReales} | Participaron: ${participantesEvento} | %: ${porcentaje}`);
+    // Colores Glow
+    if (porcentaje >= 90) {
+        elementoPorcentaje.style.color = "#47ff78";
+    } else if (porcentaje >= 60) {
+        elementoPorcentaje.style.color = "#facc15";
+    } else {
+        elementoPorcentaje.style.color = "#ff4747";
+    }
 }
 console.log([...new Set(datos.map(d => d.Jugador))]);
 // 7️⃣ Eventos
