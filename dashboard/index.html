@@ -652,7 +652,7 @@ function normalizarCofre(nombreCofre) {
 // 2️⃣ Cargar JSON
 // 🔥 CARGA ÚNICA DE DATOS
 fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/datos.json?v=" + Date.now())
-//fetch("./dashboard/data/datos.json?v=" + Date.now())
+//fetch("./dashboard/data/datos.json?v=" + Date.now()).
     .then(res => {
         if (!res.ok) throw new Error("Error al cargar el JSON");
         return res.json();
