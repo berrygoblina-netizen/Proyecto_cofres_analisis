@@ -1,75 +1,30 @@
--Clan Analytics Dashboard
+# 🛡️ Clan Analytics Dashboard
+> **Sistema de automatización y análisis de datos para el seguimiento de actividad en clanes de videojuegos.**
 
-Sistema de automatización y análisis de datos para el seguimiento de actividad en clanes de videojuegos.
+## 📝 Descripción
+Este proyecto permite recolectar, procesar y visualizar el desempeño de jugadores a partir de la recolección de cofres. Automatiza la captura de datos, los transforma en información estructurada y los presenta en un **dashboard interactivo** accesible vía web.
 
--Descripción
+## ⚙️ Cómo funciona
+El sistema se divide en tres etapas clave:
 
-Este proyecto permite recolectar, procesar y visualizar datos de jugadores a partir de la recolección de cofres dentro de un juego.
+1. **Automatización (Python + OCR):** Detecta cofres en pantalla, extrae la información automáticamente y la almacena en archivos `CSV`.
+2. **Procesamiento de Datos:** Convierte los datos brutos en métricas útiles (puntos por semana, rankings) y genera un archivo `JSON` optimizado.
+3. **Visualización (Dashboard):** Una interfaz web dinámica que permite filtrar por semana y visualizar estadísticas claras de cada jugador.
 
-El sistema automatiza la captura de datos, los transforma en información útil y los presenta en un dashboard interactivo.
+## 🚀 Problema que resuelve
+En muchos entornos competitivos, el seguimiento de actividad es **manual y propenso a errores**. Este proyecto elimina esa carga administrativa, facilitando la toma de decisiones basada en datos reales del rendimiento del clan.
 
--Cómo funciona
+## 🛠️ Tecnologías utilizadas
+* **Lenguajes:** Python (Backend & Scripting), JavaScript (Frontend).
+* **Librerías de Visión:** OpenCV / OCR (Tesseract).
+* **Web:** HTML5, CSS3.
+* **Formatos de datos:** JSON, CSV.
+* **Despliegue:** GitHub Actions & GitHub Pages.
 
-El sistema está dividido en tres partes:
-
-1. Automatización (Python + OCR)
-Detecta cofres en pantalla
-Extrae información automáticamente
-Guarda los datos en un archivo CSV
-
-2. Procesamiento de datos
-Convierte los datos en formato estructurado
-Calcula métricas como semanas y puntos
-Genera un archivo JSON
-
-3. Visualización (Dashboard)
-Muestra rankings de jugadores
-Permite filtrar por semana
-Presenta estadísticas de forma clara
-
-Problema que resuelve
-
-En muchos juegos, el seguimiento de la actividad de los jugadores es manual y poco claro.
-
-Este proyecto automatiza ese proceso, facilitando el análisis del rendimiento y la toma de decisiones dentro del clan.
-
-Tecnologías utilizadas
-
-Python (automatización y procesamiento)
-OpenCV / OCR
-HTML, CSS, JavaScript
-JSON / CSV
-
-Estructura del proyecto
-
-project/
-│
-├── dashboard/      # interfaz web
-├── automation/     # captura de datos (OCR)
-├── analysis/       # procesamiento de datos
-├── data/           # archivos CSV
+## 📂 Estructura del proyecto
+```bash
+├── dashboard/     # Interfaz web (Frontend)
+├── automation/    # Captura de datos y OCR
+├── analisis/      # Scripts de procesamiento y lógica de negocio
+├── data/          # Almacenamiento de registros (CSV/JSON)
 └── README.md
-
-Cómo usar el proyecto
-
--Ejecutar la automatización:
-
-python automation/cofre_auto.py
-
--Procesar los datos:
-
-python analysis/generar_json.py
-
--Abrir el dashboard:
-
-dashboard/index.html
-
-📸 Demo
-
-(Agregar capturas del dashboard)
-
--Sobre mí
-
-Estoy formándome como Data Analyst y desarrollo proyectos prácticos que combinan automatización, análisis y visualización de datos.
-
-Este proyecto forma parte de mi portfolio.
