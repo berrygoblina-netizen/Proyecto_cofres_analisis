@@ -1176,7 +1176,13 @@ const tipoCofre = {
     "Escuadrón Rúnico de Asalto de nivel 40-44": "evento",
     "Escuadrón Épico de Fenrir": "evento",
     "Escuadrón Épico de Jormungandr": "evento",
-    "Escuadrón Épico de los Antiguos": "evento",    
+    "Escuadrón Épico de los Antiguos": "evento",  
+    "Cripta del Tártaro de nivel 10": "evento",
+    "Cripta del Tártaro de nivel 15": "evento",
+    "Cripta del Tártaro de nivel 20": "evento",
+    "Cripta del Tártaro de nivel 25": "evento",
+    "Cripta del Tártaro de nivel 30": "evento", 
+    "Cripta del Tártaro de nivel 35": "evento",  
 };
 
 function mostrarVista(vista) {
@@ -1333,20 +1339,24 @@ function mostrarRankingDiario() {
     let puntosPorJugador = {};
 
     datos.forEach(registro => {
-        if (semanaNum !== "Todas" && registro.semanaCalc !== semanaNum) return;
+    if (semanaNum !== "Todas" && registro.semanaCalc !== semanaNum) return;
 
-        // Usamos limpiarTexto para detectar diarios sin importar el OCR
-        let nombreLimpio = limpiarTexto(registro.Cofre);
+    let nombreLimpio = limpiarTexto(registro.Cofre);
 
-        if (
-            nombreLimpio.includes("arena") ||
-            nombreLimpio.includes("cripta") ||
-            nombreLimpio.includes("ciudad")
-        ) {
-            let jugador = registro.Jugador || "Desconocido";
-            puntosPorJugador[jugador] = (puntosPorJugador[jugador] || 0) + 1;
-        }
-    });
+    // 1. Definimos si es un cofre de "Evento" (Excepciones)
+    let esEvento = nombreLimpio.includes("tartaro");
+
+    // 2. Definimos si es un cofre "Diario" 
+    // Solo contamos como diario si cumple las palabras clave Y NO es un evento
+    if (!esEvento && (
+        nombreLimpio.includes("arena") ||
+        nombreLimpio.includes("cripta") ||
+        nombreLimpio.includes("ciudad")
+    )) {
+        let jugador = registro.Jugador || "Desconocido";
+        puntosPorJugador[jugador] = (puntosPorJugador[jugador] || 0) + 1;
+    }
+});
 
     let ranking = Object.entries(puntosPorJugador).sort((a, b) => b[1] - a[1]);
 
