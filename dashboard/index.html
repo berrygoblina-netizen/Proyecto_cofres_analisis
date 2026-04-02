@@ -598,167 +598,6 @@ const nombreMap = {
    
     // agregá todos los que tengas
 };
-function esNombreValido(nombre) {
-    if (!nombre) return false;
-
-    nombre = nombre.trim().toLowerCase();
-
-    // ❌ lista negra
-    if (nombresInvalidos.includes(nombre)) return false;
-
-    // ❌ muy corto
-    if (nombre.length < 3) return false;
-
-    // ❌ tiene números
-    if (/\d/.test(nombre)) return false;
-
-    // ❌ demasiadas palabras (ruido OCR)
-    if (nombre.split(" ").length > 6) return false;
-
-    return true;
-}
-
-function limpiarTexto(texto) {
-    return texto
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "") // quitar acentos
-        .replace(/["']/g, "")            // 🔥 quitar comillas
-        .replace(/\s+/g, "")             // quitar espacios
-        .trim();
-}
-
-function normalizarNombre(nombre) {
-    const limpio = limpiarTexto(nombre);
-
-    return nombreMap[limpio] || limpio;
-}
-function capitalizarNombre(nombre) {
-    return nombre
-        .split(" ")
-        .map(p => p.charAt(0).toUpperCase() + p.slice(1))
-        .join(" ");
-}
-function normalizarCofre(nombreCofre) {
-    if (!nombreCofre) return "Desconocido";
-    
-    // 1. Limpieza básica (quita comillas, acentos, etc)
-    const limpio = limpiarTexto(nombreCofre); 
-    
-    // 2. Busca en tu mapa (ej: "ascensodelosantiguos" -> "Evento Ascenso de los Antiguos")
-    return cofreMap[limpio] || limpio; 
-}
-
-// 2️⃣ Cargar JSON
-// 🔥 CARGA ÚNICA DE DATOS
-fetch("https://berrygoblina-netizen.github.io/Proyecto_cofres_analisis/data/datos.json?v=" + Date.now())
-//fetch("./dashboard/data/datos.json?v=" + Date.now())
-    .then(res => {
-        if (!res.ok) throw new Error("Error al cargar el JSON");
-        return res.json();
-    })
-    .then(data => {
-        datos = data;
-        console.log("¡Datos frescos cargados! Total registros:", datos.length);
-
-    // 🔹 NORMALIZAR PRIMERO
-    datos = data.map(d => {
-    // Normalizar Jugador (Ya lo tienes)
-        let nombreRaw = (d.Jugador || "").trim().toLowerCase();
-        let nombreJugador = capitalizarNombre(normalizarNombre(nombreRaw));
-
-    // --- NUEVO: Normalizar Cofre ---
-        let nombreCofreLimpio = normalizarCofre(d.Cofre);
-
-        return {
-        ...d,
-        Jugador: nombreJugador,
-        Cofre: nombreCofreLimpio, // 👈 EL COFRE YA QUEDA LIMPIO PARA SIEMPRE
-        _raw: nombreRaw
-        };
-    });
-
-    // 🔹 FILTRAR DESPUÉS (IMPORTANTE)
-    datos = datos.filter(d => {
-        const raw = d._raw;
-
-        // ✅ SI ESTÁ EN EL MAPA → NO SE ELIMINA
-        if (nombreMap[raw]) return true;
-
-        const valido = esNombreValido(raw);
-
-        if (!valido) {
-            console.log("❌ eliminado:", raw);
-        }
-
-        return valido;
-    });
-
-    // 🔹 CALCULAR SEMANAS
-    const fechas = datos.map(d => new Date(d.Fecha));
-    fechaInicio = new Date(Math.min(...fechas));
-
-    datos.forEach(d => {
-        const fechaD = new Date(d.Fecha);
-        const semana = Math.floor((fechaD - fechaInicio) / (1000 * 60 * 60 * 24 * 7)) + 1;
-        d.semanaCalc = semana; // ahora es número
-    });
-
-    // 🔹 SELECTS
-    const jugadorSelect = document.getElementById("jugador");
-    const semanaSelect = document.getElementById("semana");
-    const semanaClanSelect = document.getElementById("semanaClan");
-
-    jugadorSelect.innerHTML = "";
-    semanaSelect.innerHTML = "";
-    semanaClanSelect.innerHTML = "";
-
-    // 🔹 JUGADORES
-    const jugadores = [...new Set(datos.map(d => d.Jugador))].sort();
-
-    console.log("👥 JUGADORES:", jugadores);
-
-    jugadores.forEach(j => {
-        const option = document.createElement("option");
-        option.value = j;
-        option.textContent = j;
-        jugadorSelect.appendChild(option);
-    });
-
-    // 🔹 SEMANAS
-    const semanas = [...new Set(datos.map(d => d.semanaCalc))]
-        .sort((a, b) => a - b);
-
-    semanas.forEach(s => {
-        const opt1 = document.createElement("option");
-        opt1.value = s; // número real
-        opt1.textContent = `Semana ${s}`; // lo que ve el usuario
-        semanaSelect.appendChild(opt1);
-
-        const opt2 = document.createElement("option");
-        opt2.value = s;
-        opt2.textContent = `Semana ${s}`;
-        semanaClanSelect.appendChild(opt2);
-    });
-
-    // 🔹 EVENTOS
-    semanaClanSelect.addEventListener("change", () => {
-        const valorSeleccionado = semanaClanSelect.value;
-        mostrarRanking();
-        mostrarRankingDiario();
-        dibujarGraficoActividad();
-        calcularParticipacionEvento(valorSeleccionado);
-    });
-
-    // 🔥 INICIAL
-    mostrarRanking();
-    mostrarRankingDiario();
-    dibujarGraficoActividad()
-    calcularParticipacionEvento("Todas"); // Carga inicial
-
-});
-
-
 // 5️⃣ Valores de cofres para calcular puntos
 const valoresCofre = {
     "Arena": 30,
@@ -1097,16 +936,26 @@ const cofreMap = {
     "arena": "Arena",
     "criptadeltrtaronivel10": "Cripta del Tártaro de nivel 10",
     "criptadeltartarodenivel10": "Cripta del Tártaro de nivel 10",
+
     "criptadeltrtaronivel15": "Cripta del Tártaro de nivel 15",
     "criptadeltartarodenivel15": "Cripta del Tártaro de nivel 15",
+    "criptadeltartaronivel15": "Cripta del Tártaro de nivel 15",
+    
     "criptadeltrtaronivel20": "Cripta del Tártaro de nivel 20",
     "criptadeltartarodenivel20": "Cripta del Tártaro de nivel 20",
+    "criptadeltartaronivel20": "Cripta del Tártaro de nivel 20",
+
     "criptadeltrtaronivel25": "Cripta del Tártaro de nivel 25",
     "criptadeltartarodenivel25": "Cripta del Tártaro de nivel 25",
+    "criptadeltartaronivel25": "Cripta del Tártaro de nivel 25",
+
     "criptadeltrtaronivel30": "Cripta del Tártaro de nivel 30",
     "criptadeltartarodenivel30": "Cripta del Tártaro de nivel 30",
+    "criptadeltartaronivel30": "Cripta del Tártaro de nivel 30",
+
     "criptadeltrtaronivel35": "Cripta del Tártaro de nivel 35",
     "criptadeltartarodenivel35": "Cripta del Tártaro de nivel 35",
+    "criptadeltartaronivel35": "Cripta del Tártaro de nivel 35",
     "escuadrnpicodefenrir": "Escuadrón Épico de Fenrir",
     "escuadrnpicodejormungandr": "Escuadrón Épico de Jormungandr",
     "escuadrnpicodejrmungandr": "Escuadrón Épico de Jormungandr",
@@ -1184,6 +1033,177 @@ const tipoCofre = {
     "Cripta del Tártaro de nivel 30": "evento", 
     "Cripta del Tártaro de nivel 35": "evento",  
 };
+let miGrafico = null; // Para que no se encimen los gráficos al cambiar de semana
+function esNombreValido(nombre) {
+    if (!nombre) return false;
+
+    nombre = nombre.trim().toLowerCase();
+
+    // ❌ lista negra
+    if (nombresInvalidos.includes(nombre)) return false;
+
+    // ❌ muy corto
+    if (nombre.length < 3) return false;
+
+    // ❌ tiene números
+    if (/\d/.test(nombre)) return false;
+
+    // ❌ demasiadas palabras (ruido OCR)
+    if (nombre.split(" ").length > 6) return false;
+
+    return true;
+}
+
+function limpiarTexto(texto) {
+    return texto
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // quitar acentos
+        .replace(/["']/g, "")            // 🔥 quitar comillas
+        .replace(/\s+/g, "")             // quitar espacios
+        .trim();
+}
+
+function normalizarNombre(nombre) {
+    const limpio = limpiarTexto(nombre);
+
+    return nombreMap[limpio] || limpio;
+}
+function capitalizarNombre(nombre) {
+    return nombre
+        .split(" ")
+        .map(p => p.charAt(0).toUpperCase() + p.slice(1))
+        .join(" ");
+}
+function normalizarCofre(nombreCofre) {
+    if (!nombreCofre) return "Desconocido";
+    
+    // 1. Limpieza básica (quita comillas, acentos, etc)
+    const limpio = limpiarTexto(nombreCofre); 
+    
+    // 2. Busca en tu mapa (ej: "ascensodelosantiguos" -> "Evento Ascenso de los Antiguos")
+    return cofreMap[limpio] || limpio; 
+}
+
+// 2️⃣ Cargar JSON
+// 🔥 CARGA ÚNICA DE DATOS
+// Añadimos /dashboard/ antes de /data/
+// Usar ruta relativa es más seguro y profesional
+fetch("./data/datos.json?v=" + Date.now()) 
+    .then(res => {
+        if (!res.ok) throw new Error("Error al cargar el JSON: " + res.status);
+        return res.json();
+    })
+    .then(data => {
+        // IMPORTANTE: Asegúrate de que 'datos' sea la variable global que usas
+        window.datos = data; 
+        console.log("¡Datos frescos cargados! Total registros:", data.length);
+        
+        // AQUÍ es donde debes llamar a las funciones que dibujan tu dashboard
+        // Ejemplo: inicializarGraficas();
+    
+  
+
+    // 🔹 NORMALIZAR PRIMERO
+        datos = data.map(d => {
+    // Normalizar Jugador (Ya lo tienes)
+            let nombreRaw = (d.Jugador || "").trim().toLowerCase();
+            let nombreJugador = capitalizarNombre(normalizarNombre(nombreRaw));
+
+    // --- NUEVO: Normalizar Cofre ---
+            let nombreCofreLimpio = normalizarCofre(d.Cofre);
+
+            return {
+            ...d,
+            Jugador: nombreJugador,
+            Cofre: nombreCofreLimpio, // 👈 EL COFRE YA QUEDA LIMPIO PARA SIEMPRE
+            _raw: nombreRaw
+            };
+        });
+    
+   
+    // 🔹 FILTRAR DESPUÉS (IMPORTANTE)
+        datos = datos.filter(d => {
+            const raw = d._raw;
+
+        // ✅ SI ESTÁ EN EL MAPA → NO SE ELIMINA
+            if (nombreMap[raw]) return true;
+
+            const valido = esNombreValido(raw);
+
+            if (!valido) {
+                console.log("❌ eliminado:", raw);
+            }
+
+            return valido;
+        });
+
+    // 🔹 CALCULAR SEMANAS
+        const fechas = datos.map(d => new Date(d.Fecha));
+        fechaInicio = new Date(Math.min(...fechas));
+
+        datos.forEach(d => {
+            const fechaD = new Date(d.Fecha);
+            const semana = Math.floor((fechaD - fechaInicio) / (1000 * 60 * 60 * 24 * 7)) + 1;
+            d.semanaCalc = semana; // ahora es número
+        });
+
+    // 🔹 SELECTS
+        const jugadorSelect = document.getElementById("jugador");
+        const semanaSelect = document.getElementById("semana");
+        const semanaClanSelect = document.getElementById("semanaClan");
+
+        jugadorSelect.innerHTML = "";
+        semanaSelect.innerHTML = "";
+        semanaClanSelect.innerHTML = "";
+
+    // 🔹 JUGADORES
+        const jugadores = [...new Set(datos.map(d => d.Jugador))].sort();
+
+        console.log("👥 JUGADORES:", jugadores);
+
+        jugadores.forEach(j => {
+            const option = document.createElement("option");
+            option.value = j;
+            option.textContent = j;
+            jugadorSelect.appendChild(option);
+        });
+
+    // 🔹 SEMANAS
+        const semanas = [...new Set(datos.map(d => d.semanaCalc))]
+            .sort((a, b) => a - b);
+
+        semanas.forEach(s => {
+            const opt1 = document.createElement("option");
+            opt1.value = s; // número real
+            opt1.textContent = `Semana ${s}`; // lo que ve el usuario
+            semanaSelect.appendChild(opt1);
+
+            const opt2 = document.createElement("option");
+            opt2.value = s;
+            opt2.textContent = `Semana ${s}`;
+            semanaClanSelect.appendChild(opt2);
+        });
+
+    // 🔹 EVENTOS
+        semanaClanSelect.addEventListener("change", () => {
+            const valorSeleccionado = semanaClanSelect.value;
+            mostrarRanking();
+            mostrarRankingDiario();
+            dibujarGraficoActividad();
+            calcularParticipacionEvento(valorSeleccionado);
+        });
+
+    // 🔥 INICIAL
+        mostrarRanking();
+        mostrarRankingDiario();
+        dibujarGraficoActividad()
+        calcularParticipacionEvento("Todas"); // Carga inicial
+    })
+
+     .catch(err => console.error(err));
+
+
 
 function mostrarVista(vista) {
     document.getElementById("inicio").classList.add("oculto");
@@ -1374,7 +1394,7 @@ function mostrarRankingDiario() {
         lista.appendChild(li);
     });
 }
-let miGrafico = null; // Para que no se encimen los gráficos al cambiar de semana
+
 
 function dibujarGraficoActividad() {
     const canvas = document.getElementById('graficoDiario');
