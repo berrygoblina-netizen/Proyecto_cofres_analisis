@@ -940,7 +940,7 @@ const cofreMap = {
     "criptadeltrtaronivel15": "Cripta del Tártaro de nivel 15",
     "criptadeltartarodenivel15": "Cripta del Tártaro de nivel 15",
     "criptadeltartaronivel15": "Cripta del Tártaro de nivel 15",
-    
+
     "criptadeltrtaronivel20": "Cripta del Tártaro de nivel 20",
     "criptadeltartarodenivel20": "Cripta del Tártaro de nivel 20",
     "criptadeltartaronivel20": "Cripta del Tártaro de nivel 20",
@@ -1089,7 +1089,7 @@ function normalizarCofre(nombreCofre) {
 // 🔥 CARGA ÚNICA DE DATOS
 // Añadimos /dashboard/ antes de /data/
 // Usar ruta relativa es más seguro y profesional
-fetch("./data/datos.json?v=" + Date.now()) 
+fetch("./dashboard/data/datos.json?v=" + Date.now())
     .then(res => {
         if (!res.ok) throw new Error("Error al cargar el JSON: " + res.status);
         return res.json();
