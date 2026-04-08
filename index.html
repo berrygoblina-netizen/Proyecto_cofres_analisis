@@ -1089,7 +1089,7 @@ function normalizarCofre(nombreCofre) {
 // 🔥 CARGA ÚNICA DE DATOS
 // Añadimos /dashboard/ antes de /data/
 // Usar ruta relativa es más seguro y profesional
-fetch("./data/datos.json?v=" + Date.now())
+fetch("data/datos.json?v=" + Date.now())
     .then(res => {
         if (!res.ok) throw new Error("Error al cargar el JSON: " + res.status);
         return res.json();
