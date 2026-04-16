@@ -4,3 +4,4 @@ activar venv : c:\Users\netti\OneDrive\Escritorio\Proyecto_cofres_analisis\venv\
 prompt. el boton "volver" quiero que aparezca abajo a la izquiera, la palabra jugador quiero que este a la izquierda del selector y la palabra semana tambien. quiero que tengan un estilo lindo esas palabras.
 y los botones "todos", "diarios" y "eventos" quiero que esten mas separados del selector, sean un poco mas grandes y con mas estilo, quiza un dorado o naranja.
 por ultimo quiero que haya dos ranking, uno de riqueza, (el que ya tenemos) y otro de "diarios" y que esteticamente sea igual y este al lado del ranking que ya tenemos
+entorno: .\venv\Scripts\Activate.ps1
