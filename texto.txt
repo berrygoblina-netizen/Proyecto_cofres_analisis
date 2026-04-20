@@ -5,3 +5,4 @@ prompt. el boton "volver" quiero que aparezca abajo a la izquiera, la palabra ju
 y los botones "todos", "diarios" y "eventos" quiero que esten mas separados del selector, sean un poco mas grandes y con mas estilo, quiza un dorado o naranja.
 por ultimo quiero que haya dos ranking, uno de riqueza, (el que ya tenemos) y otro de "diarios" y que esteticamente sea igual y este al lado del ranking que ya tenemos
 entorno: .\venv\Scripts\Activate.ps1
+python analisis/generar_json.py
