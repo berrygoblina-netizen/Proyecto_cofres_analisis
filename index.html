@@ -460,6 +460,7 @@ const nombresInvalidos = [
     "Teufelhunden ",
     "a a a"
 ];
+const ALLOWED_REPEATED_NUMBER_PLAYERS = ["durdy 7777"];
 const nombreMap = {
     // "nombre_raw": "Nombre limpio"
     "aaron": "Aaron",
@@ -1059,6 +1060,33 @@ function esNombreValido(nombre) {
     if (/\d/.test(nombre)) return false;
 
     // ❌ demasiadas palabras (ruido OCR)
+    if (nombre.split(" ").length > 6) return false;
+
+    return true;
+}
+
+function normalizarNombrePermitido(nombre) {
+    return (nombre || "")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ");
+}
+
+function esJugadorConNumeroPermitido(nombre) {
+    const nombreNormalizado = normalizarNombrePermitido(nombre);
+    return ALLOWED_REPEATED_NUMBER_PLAYERS.includes(nombreNormalizado);
+}
+
+function esNombreValido(nombre) {
+    if (!nombre) return false;
+
+    nombre = nombre.trim().toLowerCase();
+
+    if (esJugadorConNumeroPermitido(nombre)) return true;
+
+    if (nombresInvalidos.includes(nombre)) return false;
+    if (nombre.length < 3) return false;
+    if (/\d/.test(nombre)) return false;
     if (nombre.split(" ").length > 6) return false;
 
     return true;
