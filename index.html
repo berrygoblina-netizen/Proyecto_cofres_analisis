@@ -461,6 +461,9 @@ const nombresInvalidos = [
     "a a a"
 ];
 const ALLOWED_REPEATED_NUMBER_PLAYERS = ["durdy 7777"];
+const PROTECTED_PLAYER_LABEL = "Durdy 7777";
+const PROTECTED_PLAYER_COMPACT = "durdy7777";
+let protectedPlayerLastStage = "inicio";
 const nombreMap = {
     // "nombre_raw": "Nombre limpio"
     "aaron": "Aaron",
@@ -982,7 +985,9 @@ const cofreMap = {
     "eventobotindelterrar": "Evento Botín del Terror",
     "eventobotndelterrar": "Evento Botín del Terror",
     "eventobotndelterror": "Evento Botín del Terror",
+    "eventobotindelterror”": "Evento Botín del Terror",
     "invocacindeauguriososcuros": "Invocación de Auguriosos Oscuros",
+    "invocaciondeauguriososcuros": "Invocación de Auguriosos Oscuros",
     "invocaciondeauguriosososcuros": "Invocación de Auguriosos Oscuros",
     "eventoauguriososcuros": "Evento Augurios Oscuros",
     "eventopruebasdelolimpo": "Evento Pruebas del Olimpo",
@@ -1045,36 +1050,102 @@ const tipoCofre = {
     "Cripta del Tártaro de nivel 35": "evento",  
 };
 let miGrafico = null; // Para que no se encimen los gráficos al cambiar de semana
-function esNombreValido(nombre) {
-    if (!nombre) return false;
-
-    nombre = nombre.trim().toLowerCase();
-
-    // ❌ lista negra
-    if (nombresInvalidos.includes(nombre)) return false;
-
-    // ❌ muy corto
-    if (nombre.length < 3) return false;
-
-    // ❌ tiene números
-    if (/\d/.test(nombre)) return false;
-
-    // ❌ demasiadas palabras (ruido OCR)
-    if (nombre.split(" ").length > 6) return false;
-
-    return true;
-}
-
-function normalizarNombrePermitido(nombre) {
-    return (nombre || "")
-        .trim()
+function normalizarTextoProtegido(texto) {
+    return (texto || "")
         .toLowerCase()
-        .replace(/\s+/g, " ");
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim();
 }
 
-function esJugadorConNumeroPermitido(nombre) {
-    const nombreNormalizado = normalizarNombrePermitido(nombre);
-    return ALLOWED_REPEATED_NUMBER_PLAYERS.includes(nombreNormalizado);
+function compactarNombreProtegido(nombre) {
+    return normalizarTextoProtegido(nombre).replace(/[^a-z0-9]/g, "");
+}
+
+function isProtectedPlayer(nombre) {
+    const nombreNormalizado = normalizarTextoProtegido(nombre).replace(/\s+/g, " ");
+    const nombreCompacto = compactarNombreProtegido(nombre);
+
+    return (
+        nombreCompacto === PROTECTED_PLAYER_COMPACT ||
+        nombreNormalizado === "durdy 7777" ||
+        ALLOWED_REPEATED_NUMBER_PLAYERS.includes(nombreNormalizado)
+    );
+}
+
+function registrarEtapaJugadorProtegido(etapa, presente, detalle) {
+    if (presente) {
+        protectedPlayerLastStage = etapa;
+        console.log(`[TRACE ${PROTECTED_PLAYER_LABEL}] ${etapa}: presente`, detalle || "");
+        return;
+    }
+
+    console.error(
+        `[TRACE ${PROTECTED_PLAYER_LABEL}] perdido en ${etapa}. ` +
+        `Última etapa confirmada: ${protectedPlayerLastStage}.`,
+        detalle || ""
+    );
+}
+
+function trazarJugadorProtegidoEnRegistros(etapa, registros) {
+    const coincidencias = registros.filter(registro => {
+        if (!registro) return false;
+
+        return isProtectedPlayer(registro.Jugador) ||
+            isProtectedPlayer(registro._raw) ||
+            isProtectedPlayer(registro.nombreOriginal) ||
+            isProtectedPlayer(registro.nombreNormalizado);
+    });
+
+    registrarEtapaJugadorProtegido(etapa, coincidencias.length > 0, {
+        totalCoincidencias: coincidencias.length,
+        muestra: coincidencias.slice(0, 5).map(registro => ({
+            Jugador: registro.Jugador,
+            _raw: registro._raw,
+            nombreOriginal: registro.nombreOriginal,
+            nombreNormalizado: registro.nombreNormalizado,
+            Cofre: registro.Cofre,
+            Fecha: registro.Fecha
+        }))
+    });
+}
+
+function trazarJugadorProtegidoEnLista(etapa, lista) {
+    const coincidencias = lista.filter(item => isProtectedPlayer(item));
+
+    registrarEtapaJugadorProtegido(etapa, coincidencias.length > 0, {
+        totalCoincidencias: coincidencias.length,
+        coincidencias
+    });
+}
+
+function verificarJugadorProtegidoFinal(jugadores, jugadorSelect) {
+    const existeEnLista = jugadores.some(jugador => isProtectedPlayer(jugador));
+    const existeEnSelect = [...jugadorSelect.options].some(option => isProtectedPlayer(option.value));
+
+    if (!existeEnLista) {
+        console.error(
+            `[ERROR ${PROTECTED_PLAYER_LABEL}] no aparece en la lista final de jugadores. ` +
+            `Última etapa confirmada: ${protectedPlayerLastStage}.`
+        );
+        return;
+    }
+
+    if (!existeEnSelect) {
+        console.error(
+            `[ERROR ${PROTECTED_PLAYER_LABEL}] aparece en la lista final pero no en el index/select. ` +
+            `Última etapa confirmada: ${protectedPlayerLastStage}.`
+        );
+        return;
+    }
+
+    registrarEtapaJugadorProtegido("verificación final", true, {
+        listaFinal: existeEnLista,
+        selectFinal: existeEnSelect
+    });
+}
+function normalizarNombrePermitido(nombre) {
+    return normalizarTextoProtegido(nombre).replace(/\s+/g, " ");
 }
 
 function esNombreValido(nombre) {
@@ -1082,7 +1153,7 @@ function esNombreValido(nombre) {
 
     nombre = nombre.trim().toLowerCase();
 
-    if (esJugadorConNumeroPermitido(nombre)) return true;
+    if (isProtectedPlayer(nombre)) return true;
 
     if (nombresInvalidos.includes(nombre)) return false;
     if (nombre.length < 3) return false;
@@ -1136,6 +1207,11 @@ fetch("data/datos.json?v=" + Date.now())
         // IMPORTANTE: Asegúrate de que 'datos' sea la variable global que usas
         window.datos = data; 
         console.log("¡Datos frescos cargados! Total registros:", data.length);
+        protectedPlayerLastStage = "json cargado";
+        trazarJugadorProtegidoEnRegistros("json crudo", data.map(d => ({
+            ...d,
+            nombreOriginal: d.Jugador
+        })));
         
         // AQUÍ es donde debes llamar a las funciones que dibujan tu dashboard
         // Ejemplo: inicializarGraficas();
@@ -1146,7 +1222,10 @@ fetch("data/datos.json?v=" + Date.now())
         datos = data.map(d => {
     // Normalizar Jugador (Ya lo tienes)
             let nombreRaw = (d.Jugador || "").trim().toLowerCase();
-            let nombreJugador = capitalizarNombre(normalizarNombre(nombreRaw));
+            let nombreNormalizado = normalizarNombre(nombreRaw);
+            let nombreJugador = isProtectedPlayer(nombreRaw)
+                ? PROTECTED_PLAYER_LABEL
+                : capitalizarNombre(nombreNormalizado);
 
     // --- NUEVO: Normalizar Cofre ---
             let nombreCofreLimpio = normalizarCofre(d.Cofre);
@@ -1155,14 +1234,26 @@ fetch("data/datos.json?v=" + Date.now())
             ...d,
             Jugador: nombreJugador,
             Cofre: nombreCofreLimpio, // 👈 EL COFRE YA QUEDA LIMPIO PARA SIEMPRE
-            _raw: nombreRaw
+            _raw: nombreRaw,
+            nombreOriginal: d.Jugador || "",
+            nombreNormalizado
             };
         });
+        trazarJugadorProtegidoEnRegistros("normalización de nombres", datos);
     
    
     // 🔹 FILTRAR DESPUÉS (IMPORTANTE)
         datos = datos.filter(d => {
             const raw = d._raw;
+
+            if (isProtectedPlayer(raw) || isProtectedPlayer(d.Jugador)) {
+                console.log(`[TRACE ${PROTECTED_PLAYER_LABEL}] filtro principal: protegido, sobrevive`, {
+                    raw,
+                    jugador: d.Jugador,
+                    nombreNormalizado: d.nombreNormalizado
+                });
+                return true;
+            }
 
         // ✅ SI ESTÁ EN EL MAPA → NO SE ELIMINA
             if (nombreMap[raw]) return true;
@@ -1175,6 +1266,7 @@ fetch("data/datos.json?v=" + Date.now())
 
             return valido;
         });
+        trazarJugadorProtegidoEnRegistros("filtro anti-spam", datos);
 
     // 🔹 CALCULAR SEMANAS
         const fechas = datos.map(d => new Date(d.Fecha));
@@ -1185,6 +1277,7 @@ fetch("data/datos.json?v=" + Date.now())
             const semana = Math.floor((fechaD - fechaInicio) / (1000 * 60 * 60 * 24 * 7)) + 1;
             d.semanaCalc = semana; // ahora es número
         });
+        trazarJugadorProtegidoEnRegistros("cálculo de semanas", datos);
 
     // 🔹 SELECTS
         const jugadorSelect = document.getElementById("jugador");
@@ -1197,6 +1290,7 @@ fetch("data/datos.json?v=" + Date.now())
 
     // 🔹 JUGADORES
         const jugadores = [...new Set(datos.map(d => d.Jugador))].sort();
+        trazarJugadorProtegidoEnLista("deduplicado y ordenamiento", jugadores);
 
         console.log("👥 JUGADORES:", jugadores);
 
@@ -1206,6 +1300,11 @@ fetch("data/datos.json?v=" + Date.now())
             option.textContent = j;
             jugadorSelect.appendChild(option);
         });
+        trazarJugadorProtegidoEnLista(
+            "generación del index final",
+            [...jugadorSelect.options].map(option => option.value)
+        );
+        verificarJugadorProtegidoFinal(jugadores, jugadorSelect);
 
     // 🔹 SEMANAS
         const semanas = [...new Set(datos.map(d => d.semanaCalc))]
