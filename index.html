@@ -375,6 +375,7 @@
     <div class="filtro-botones">
     <button onclick="mostrarCofres('todos')">Todos</button>
     <button onclick="mostrarCofres('diario')">Diarios</button>
+    <button onclick="mostrarCofres('varios')">Varios</button>
     <button onclick="mostrarCofres('evento')">Eventos</button>
 </div>
 
@@ -1000,9 +1001,6 @@ const cofreMap = {
 };
 const tipoCofre = {
     // DIARIOS
-    "Arena": "diario",
-    "Cripta de nivel 5": "diario",
-    "Cripta de nivel 10": "diario",
     "Cripta de nivel 15": "diario",
     "Cripta de nivel 20": "diario",
     "Cripta de nivel 25": "diario",
@@ -1024,6 +1022,11 @@ const tipoCofre = {
     "Ciudadela de nivel 25": "diario",
     "Ciudadela de nivel 30": "diario",
     "Ciudadela de nivel 35": "diario",
+
+    // VARIOS
+    "Arena": "varios",
+    "Cripta de nivel 5": "varios",
+    "Cripta de nivel 10": "varios",
 
     // EVENTOS
     "Evento Pruebas del Olimpo": "evento",
@@ -1389,7 +1392,7 @@ function mostrarCofres(tipo = "todos") {
 
 
     // 🔥 3. FILTRAR POR TIPO (ACA ESTABA TU ERROR)
-   // 🔥 REEMPLAZO COMPLETO: Lógica de filtrado por tipo (Diario / Evento)
+    // 🔥 REEMPLAZO COMPLETO: Lógica de filtrado por tipo (Diario / Varios / Evento)
     if (tipo !== "todos") {
         filtrados = filtrados.filter(d => {
         // 1. Usamos tu función para obtener el nombre oficial (ej: "Evento Ascenso de los Antiguos")
@@ -1401,14 +1404,16 @@ function mostrarCofres(tipo = "todos") {
 
         // 3. FALLBACK INTELIGENTE: Si no está en el diccionario, usamos palabras clave
             if (!tipoDetectado) {
-                const esDiario = nombreMin.includes("cripta") || 
-                             nombreMin.includes("arena") || 
-                             nombreMin.includes("ciudad");
+                const esVarios = nombreMin.includes("arena") ||
+                                 nombreMin === "cripta de nivel 5" ||
+                                 nombreMin === "cripta de nivel 10";
+                const esDiario = nombreMin.includes("cripta") ||
+                                 nombreMin.includes("ciudad");
             
-                tipoDetectado = esDiario ? "diario" : "evento";
+                tipoDetectado = esVarios ? "varios" : (esDiario ? "diario" : "evento");
             }
 
-        // 4. Retornamos true si coincide con lo que el usuario busca (diario o evento)
+        // 4. Retornamos true si coincide con lo que el usuario busca
             return tipoDetectado === tipo;
         });
     }
@@ -1497,18 +1502,10 @@ function mostrarRankingDiario() {
     datos.forEach(registro => {
     if (semanaNum !== "Todas" && registro.semanaCalc !== semanaNum) return;
 
-    let nombreLimpio = limpiarTexto(registro.Cofre);
+    const nombreOficial = normalizarCofre(registro.Cofre);
 
-    // 1. Definimos si es un cofre de "Evento" (Excepciones)
-    let esEvento = nombreLimpio.includes("tartaro");
-
-    // 2. Definimos si es un cofre "Diario" 
-    // Solo contamos como diario si cumple las palabras clave Y NO es un evento
-    if (!esEvento && (
-        nombreLimpio.includes("arena") ||
-        nombreLimpio.includes("cripta") ||
-        nombreLimpio.includes("ciudad")
-    )) {
+    // El ranking diario usa la misma clasificación que el historial.
+    if (tipoCofre[nombreOficial] === "diario") {
         let jugador = registro.Jugador || "Desconocido";
         puntosPorJugador[jugador] = (puntosPorJugador[jugador] || 0) + 1;
     }
