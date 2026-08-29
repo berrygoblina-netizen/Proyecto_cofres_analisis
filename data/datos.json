@@ -1,1425 +1,5 @@
 [
     {
-        "Fecha": "2026-08-17 02:25:30",
-        "Jugador": "turbiybiczu",
-        "Cofre": "banco"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:31",
-        "Jugador": "turbiybiczu",
-        "Cofre": "banco"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:33",
-        "Jugador": "cheska",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:34",
-        "Jugador": "cheska",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:34",
-        "Jugador": "turbiybiczu",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:35",
-        "Jugador": "turbiybiczu",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:36",
-        "Jugador": "astralsito",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:37",
-        "Jugador": "astralsito",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:37",
-        "Jugador": "astralsito",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:38",
-        "Jugador": "astralsito",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:39",
-        "Jugador": "astralsito",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:40",
-        "Jugador": "sath",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:40",
-        "Jugador": "astralsito",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:41",
-        "Jugador": "astralsito",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:42",
-        "Jugador": "astralsito",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:42",
-        "Jugador": "astralsito",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:43",
-        "Jugador": "astralsito",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:44",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:45",
-        "Jugador": "punisher",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:45",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:46",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:47",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:48",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:48",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:49",
-        "Jugador": "punisher",
-        "Cofre": "cripta épica de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:50",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:50",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:51",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:52",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:53",
-        "Jugador": "punisher",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:53",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:54",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:55",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:56",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:56",
-        "Jugador": "dagelv",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:57",
-        "Jugador": "astralsito",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:58",
-        "Jugador": "dagelv",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:58",
-        "Jugador": "dagelv",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:25:59",
-        "Jugador": "dagelv",
-        "Cofre": "arena"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:00",
-        "Jugador": "punisher",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:01",
-        "Jugador": "davatoloco",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:01",
-        "Jugador": "davatoloco",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:02",
-        "Jugador": "davatoloco",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:03",
-        "Jugador": "sisu",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:04",
-        "Jugador": "davatoloco",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:04",
-        "Jugador": "sisu",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:05",
-        "Jugador": "davatoloco",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:06",
-        "Jugador": "sisu",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:07",
-        "Jugador": "sisu",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:07",
-        "Jugador": "davatoloco",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:08",
-        "Jugador": "sisu",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:09",
-        "Jugador": "sisu",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:09",
-        "Jugador": "davatoloco",
-        "Cofre": "cripta rara de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:10",
-        "Jugador": "sisu",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:11",
-        "Jugador": "davatoloco",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:12",
-        "Jugador": "sisu",
-        "Cofre": "cripta rara de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:12",
-        "Jugador": "keradred",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:13",
-        "Jugador": "sisu",
-        "Cofre": "cripta épica de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:14",
-        "Jugador": "davatoloco",
-        "Cofre": "cripta rara de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:15",
-        "Jugador": "keradred",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:15",
-        "Jugador": "keradred",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:16",
-        "Jugador": "keradred",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:17",
-        "Jugador": "sisu",
-        "Cofre": "cripta épica de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:18",
-        "Jugador": "keradred",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:18",
-        "Jugador": "keradred",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:19",
-        "Jugador": "keradred",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:20",
-        "Jugador": "keradred",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:20",
-        "Jugador": "keradred",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:21",
-        "Jugador": "turbiybiczu",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:22",
-        "Jugador": "turbiybiczu",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:23",
-        "Jugador": "turbiybiczu",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:23",
-        "Jugador": "keradred",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:24",
-        "Jugador": "turbiybiczu",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:25",
-        "Jugador": "turbiybiczu",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:26",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:26",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:27",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:28",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:28",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:29",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:30",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:31",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:31",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:32",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta épica de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:33",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta épica de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:34",
-        "Jugador": "sisuskk",
-        "Cofre": "cripta épica de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:34",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:35",
-        "Jugador": "marrar",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:36",
-        "Jugador": "cheska",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:36",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:37",
-        "Jugador": "marrar",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:38",
-        "Jugador": "marrar",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:39",
-        "Jugador": "marrar",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:39",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:40",
-        "Jugador": "cheska",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:41",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:42",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:42",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:43",
-        "Jugador": "marod",
-        "Cofre": "cripta rara de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:44",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:45",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:45",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:46",
-        "Jugador": "burilen",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:47",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:47",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:48",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:49",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:50",
-        "Jugador": "lorven",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:50",
-        "Jugador": "sath",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:51",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:52",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:53",
-        "Jugador": "lorven",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:53",
-        "Jugador": "marod",
-        "Cofre": "cripta rara de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:54",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:55",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:55",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:56",
-        "Jugador": "ganian wala",
-        "Cofre": "cripta épica de nivel 30"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:57",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:58",
-        "Jugador": "lorven",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:58",
-        "Jugador": "punisher",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:26:59",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:00",
-        "Jugador": "marod",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:01",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:01",
-        "Jugador": "maakosky",
-        "Cofre": "ciudadela de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:02",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:03",
-        "Jugador": "soule1970",
-        "Cofre": "ciudadela de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:03",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:04",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:05",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:06",
-        "Jugador": "soule1970",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:06",
-        "Jugador": "soule1970",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:07",
-        "Jugador": "maakosky",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:08",
-        "Jugador": "maakosky",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:09",
-        "Jugador": "conrado",
-        "Cofre": "escuadrón épico del enjambre de aracne"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:09",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:10",
-        "Jugador": "maakosky",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:11",
-        "Jugador": "conrado",
-        "Cofre": "cripta épica de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:11",
-        "Jugador": "conrado",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:12",
-        "Jugador": "conrado",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:13",
-        "Jugador": "gustavo",
-        "Cofre": "cripta épica de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:14",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:14",
-        "Jugador": "conrado",
-        "Cofre": "cripta rara de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:15",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:16",
-        "Jugador": "conrado",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:17",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:17",
-        "Jugador": "conrado",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:18",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:19",
-        "Jugador": "devildog",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:19",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:20",
-        "Jugador": "conrado",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:21",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:22",
-        "Jugador": "devildog",
-        "Cofre": "cripta rara de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:22",
-        "Jugador": "devildog",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:23",
-        "Jugador": "devildog",
-        "Cofre": "cripta épica de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:24",
-        "Jugador": "devildog",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:25",
-        "Jugador": "devildog",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:25",
-        "Jugador": "bralis",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:26",
-        "Jugador": "bralis",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:27",
-        "Jugador": "bralis",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:27",
-        "Jugador": "asteria",
-        "Cofre": "cripta épica de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:28",
-        "Jugador": "asteria",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:29",
-        "Jugador": "asteria",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:30",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:30",
-        "Jugador": "gustavo",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:31",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:32",
-        "Jugador": "asteria",
-        "Cofre": "cripta de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:33",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:33",
-        "Jugador": "gustavo",
-        "Cofre": "ciudadela de nivel 10"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:34",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:35",
-        "Jugador": "asteria",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:35",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:36",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:37",
-        "Jugador": "asteria",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:38",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:38",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:39",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:40",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:41",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:41",
-        "Jugador": "alma",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:42",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:43",
-        "Jugador": "alma",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:43",
-        "Jugador": "benxander",
-        "Cofre": "riqueza del clan"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:44",
-        "Jugador": "benxander",
-        "Cofre": "riqueza del clan"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:45",
-        "Jugador": "benxander",
-        "Cofre": "riqueza del clan"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:46",
-        "Jugador": "benxander",
-        "Cofre": "riqueza del clan"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:46",
-        "Jugador": "alma",
-        "Cofre": "cripta épica de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:47",
-        "Jugador": "benxander",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:48",
-        "Jugador": "benxander",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:49",
-        "Jugador": "benxander",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:49",
-        "Jugador": "grírim",
-        "Cofre": "cripta rara de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:50",
-        "Jugador": "bralis",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:51",
-        "Jugador": "grírim",
-        "Cofre": "cripta rara de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:52",
-        "Jugador": "grírim",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:52",
-        "Jugador": "grírim",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:53",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:54",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:54",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:55",
-        "Jugador": "rapsus",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:56",
-        "Jugador": "rapsus",
-        "Cofre": "cripta épica de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:57",
-        "Jugador": "rapsus",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:57",
-        "Jugador": "rapsus",
-        "Cofre": "cripta rara de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:58",
-        "Jugador": "rapsus",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:27:59",
-        "Jugador": "devildog",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:00",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:00",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:01",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:02",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:03",
-        "Jugador": "mauro",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:03",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:04",
-        "Jugador": "mauro",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:05",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:05",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:06",
-        "Jugador": "mauro",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:07",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:08",
-        "Jugador": "mauro",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:08",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:09",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:10",
-        "Jugador": "mauro",
-        "Cofre": "cripta épica de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:11",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:11",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:12",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:13",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:13",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:14",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:15",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:16",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:16",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:17",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:18",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:19",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:19",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:20",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:21",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:22",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:22",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:23",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:24",
-        "Jugador": "kishura",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:24",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:25",
-        "Jugador": "kishura",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:26",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:27",
-        "Jugador": "kishura",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:27",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:28",
-        "Jugador": "kishura",
-        "Cofre": "cripta épica de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:29",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:30",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:30",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:31",
-        "Jugador": "kishura",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:32",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:32",
-        "Jugador": "the lion",
-        "Cofre": "cripta de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:33",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:34",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:35",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:35",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:36",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:37",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:38",
-        "Jugador": "grírim",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:38",
-        "Jugador": "punisher",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:39",
-        "Jugador": "punisher",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:40",
-        "Jugador": "alex1os",
-        "Cofre": "cripta épica de nivel 15"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:41",
-        "Jugador": "alex1os",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:41",
-        "Jugador": "alex1os",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:42",
-        "Jugador": "alex1os",
-        "Cofre": "cripta épica de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:43",
-        "Jugador": "alex1os",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:43",
-        "Jugador": "alex1os",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:44",
-        "Jugador": "alex1os",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:45",
-        "Jugador": "alex1os",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:46",
-        "Jugador": "alex1os",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:46",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:47",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:48",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:49",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:49",
-        "Jugador": "blalex",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:50",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:51",
-        "Jugador": "blalex",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:52",
-        "Jugador": "blalex",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:52",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:53",
-        "Jugador": "blalex",
-        "Cofre": "cripta de nivel 20"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:54",
-        "Jugador": "blalex",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:54",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:55",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:56",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:57",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:57",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
-        "Fecha": "2026-08-17 02:28:58",
-        "Jugador": "kounela “y",
-        "Cofre": "cripta rara de nivel 25"
-    },
-    {
         "Fecha": "2026-08-17 13:27:41",
         "Jugador": "devildog",
         "Cofre": "banco"
@@ -93563,5 +92143,3645 @@
         "Fecha": "2026-08-28 16:03:22",
         "Jugador": "alex1os",
         "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:39",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:40",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:41",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:41",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:42",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:43",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:44",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:44",
+        "Jugador": "soares",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:45",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:46",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:47",
+        "Jugador": "alvar y",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:47",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:48",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:49",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:50",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:50",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:51",
+        "Jugador": "alvar y",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:52",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:53",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:53",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:54",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:55",
+        "Jugador": "alvar y",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:55",
+        "Jugador": "soares",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:56",
+        "Jugador": "soares",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:57",
+        "Jugador": "jhanau kong",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:58",
+        "Jugador": "marod",
+        "Cofre": "arena"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:58",
+        "Jugador": "eznudel",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:02:59",
+        "Jugador": "marod",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:00",
+        "Jugador": "marod",
+        "Cofre": "cripta de nivel 10"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:01",
+        "Jugador": "eznudel",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:01",
+        "Jugador": "marod",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:02",
+        "Jugador": "marod",
+        "Cofre": "cripta de nivel 10"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:03",
+        "Jugador": "eznudel",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:03",
+        "Jugador": "marod",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:04",
+        "Jugador": "jhanau kong",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:05",
+        "Jugador": "eznudel",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:06",
+        "Jugador": "daidal",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:06",
+        "Jugador": "eznudel",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:07",
+        "Jugador": "daidal",
+        "Cofre": "arena"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:08",
+        "Jugador": "eznudel",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:09",
+        "Jugador": "eznudel",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:09",
+        "Jugador": "eznudel",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:10",
+        "Jugador": "eznudel",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:11",
+        "Jugador": "eznudel",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:12",
+        "Jugador": "jhanau kong",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:12",
+        "Jugador": "eznudel",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:13",
+        "Jugador": "eznudel",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:14",
+        "Jugador": "eznudel",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:14",
+        "Jugador": "jhanau kong",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:15",
+        "Jugador": "keradred",
+        "Cofre": "arena"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:16",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:17",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:17",
+        "Jugador": "daidal",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:18",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:19",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:20",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:20",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:21",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:22",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:23",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:23",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:24",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:25",
+        "Jugador": "boy oh boy",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:26",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:26",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:27",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:28",
+        "Jugador": "keradred",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:28",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:29",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:30",
+        "Jugador": "keradred",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:31",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:31",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:32",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:33",
+        "Jugador": "keradred",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:34",
+        "Jugador": "lagar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:34",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:35",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:36",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:37",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:37",
+        "Jugador": "lagar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:38",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:39",
+        "Jugador": "lagar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:39",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:40",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:41",
+        "Jugador": "ulises el floreros",
+        "Cofre": "ciudadela de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:42",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:42",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:43",
+        "Jugador": "ulises el floreros",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:44",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:45",
+        "Jugador": "lagar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:45",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:46",
+        "Jugador": "lagar",
+        "Cofre": "cripta épica de nivel 35"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:47",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:48",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:48",
+        "Jugador": "ulises el floreros",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:49",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:50",
+        "Jugador": "keradred",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:50",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:51",
+        "Jugador": "lagar",
+        "Cofre": "cripta épica de nivel 35"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:52",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:53",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:53",
+        "Jugador": "shahzeb khanzada",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:54",
+        "Jugador": "ulises el floreros",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:55",
+        "Jugador": "keradred",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:56",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:56",
+        "Jugador": "ulises el floreros",
+        "Cofre": "ciudadela de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:57",
+        "Jugador": "keradred",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:58",
+        "Jugador": "boy name",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:59",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:03:59",
+        "Jugador": "lagar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:00",
+        "Jugador": "ulises el floreros",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:01",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:02",
+        "Jugador": "adorazius",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:02",
+        "Jugador": "ulises el floreros",
+        "Cofre": "ciudadela de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:03",
+        "Jugador": "adorazius",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:04",
+        "Jugador": "keradred",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:04",
+        "Jugador": "keradred",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:05",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:06",
+        "Jugador": "adorazius",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:07",
+        "Jugador": "keradred",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:07",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:08",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:09",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:10",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:10",
+        "Jugador": "adorazius",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:11",
+        "Jugador": "adorazius",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:12",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:13",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:13",
+        "Jugador": "adorazius",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:14",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:15",
+        "Jugador": "adorazius",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:15",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:16",
+        "Jugador": "blalex",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:17",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:18",
+        "Jugador": "keradred",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:18",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:19",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:20",
+        "Jugador": "blalex",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:21",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:21",
+        "Jugador": "blalex",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:22",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:23",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:24",
+        "Jugador": "adorazius",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:24",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:25",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:26",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:27",
+        "Jugador": "keradred",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:27",
+        "Jugador": "keradred",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:28",
+        "Jugador": "keradred",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:29",
+        "Jugador": "keradred",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:30",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:30",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:31",
+        "Jugador": "ganian wala",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:32",
+        "Jugador": "ganian wala",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:32",
+        "Jugador": "ganian wala",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:33",
+        "Jugador": "lagar",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:34",
+        "Jugador": "ganian wala",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:35",
+        "Jugador": "durga",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:35",
+        "Jugador": "durga",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:36",
+        "Jugador": "durga",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:37",
+        "Jugador": "durga",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:38",
+        "Jugador": "rufean il",
+        "Cofre": "arena"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:38",
+        "Jugador": "rufean il",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:39",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:40",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:41",
+        "Jugador": "durga",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:41",
+        "Jugador": "punisher",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:42",
+        "Jugador": "marrar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:43",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:44",
+        "Jugador": "marrar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:44",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:45",
+        "Jugador": "troya",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:46",
+        "Jugador": "punisher",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:46",
+        "Jugador": "marrar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:47",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:48",
+        "Jugador": "punisher",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:49",
+        "Jugador": "marrar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:49",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:50",
+        "Jugador": "marrar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:51",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:52",
+        "Jugador": "marrar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:52",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:53",
+        "Jugador": "marrar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:54",
+        "Jugador": "marrar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:55",
+        "Jugador": "marrar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:55",
+        "Jugador": "marrar",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:56",
+        "Jugador": "marrar",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:57",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:58",
+        "Jugador": "marrar",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:58",
+        "Jugador": "marrar",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:04:59",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:00",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:00",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:01",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:02",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:03",
+        "Jugador": "durga",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:03",
+        "Jugador": "durga",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:04",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:05",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:06",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:06",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:07",
+        "Jugador": "durga",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:08",
+        "Jugador": "durga",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:09",
+        "Jugador": "burilen",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:09",
+        "Jugador": "durga",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:10",
+        "Jugador": "durga",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:11",
+        "Jugador": "durga",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:12",
+        "Jugador": "burilen",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:12",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:13",
+        "Jugador": "marrar",
+        "Cofre": "escuadrón épico del enjambre de aracne"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:14",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:15",
+        "Jugador": "duna",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:15",
+        "Jugador": "duna",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:16",
+        "Jugador": "duna",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:17",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:18",
+        "Jugador": "daidal",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:18",
+        "Jugador": "biin",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:19",
+        "Jugador": "daidal",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:20",
+        "Jugador": "daidal",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:20",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:21",
+        "Jugador": "sath",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:22",
+        "Jugador": "sath",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:23",
+        "Jugador": "sath",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:23",
+        "Jugador": "sath",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:24",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:25",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:26",
+        "Jugador": "burilen",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:26",
+        "Jugador": "devildog",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:27",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:28",
+        "Jugador": "devildog",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:29",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:29",
+        "Jugador": "grírim",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:30",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:31",
+        "Jugador": "grírim",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:32",
+        "Jugador": "grírim",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:32",
+        "Jugador": "grírim",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:33",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:34",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:34",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:35",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:36",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:37",
+        "Jugador": "dardaen",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:37",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:38",
+        "Jugador": "dardaen",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:39",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:40",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:40",
+        "Jugador": "asteria",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:41",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:42",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:43",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:43",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:44",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:45",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:46",
+        "Jugador": "grírim",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:46",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:47",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:48",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:48",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:49",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:50",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:51",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:51",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:52",
+        "Jugador": "dardaen",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:53",
+        "Jugador": "asteria",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:54",
+        "Jugador": "lorven",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:54",
+        "Jugador": "asteria",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:55",
+        "Jugador": "lorven",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:56",
+        "Jugador": "soule1970",
+        "Cofre": "cripta de nivel 10"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:57",
+        "Jugador": "lorven",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:57",
+        "Jugador": "asteria",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:58",
+        "Jugador": "soule1970",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:05:59",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:00",
+        "Jugador": "erreape",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:00",
+        "Jugador": "erreape",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:01",
+        "Jugador": "asturi",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:02",
+        "Jugador": "erreape",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:03",
+        "Jugador": "erreape",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:03",
+        "Jugador": "soule1970",
+        "Cofre": "cripta épica de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:04",
+        "Jugador": "asteria",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:05",
+        "Jugador": "asturi",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:06",
+        "Jugador": "erreape",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:06",
+        "Jugador": "soule1970",
+        "Cofre": "cripta de nivel 5"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:07",
+        "Jugador": "erreape",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:08",
+        "Jugador": "erreape",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:09",
+        "Jugador": "asturi",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:09",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:10",
+        "Jugador": "erreape",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:11",
+        "Jugador": "erreape",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:12",
+        "Jugador": "asturi",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:12",
+        "Jugador": "erreape",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:13",
+        "Jugador": "asturi",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:14",
+        "Jugador": "asteria",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:14",
+        "Jugador": "maakosky",
+        "Cofre": "ciudadela de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:15",
+        "Jugador": "asteria",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:16",
+        "Jugador": "asturi",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:17",
+        "Jugador": "asteria",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:17",
+        "Jugador": "asturi",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:18",
+        "Jugador": "asteria",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:19",
+        "Jugador": "asturi",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:20",
+        "Jugador": "asturi",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:20",
+        "Jugador": "asteria",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:21",
+        "Jugador": "asteria",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:22",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:23",
+        "Jugador": "asteria",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:23",
+        "Jugador": "asturi",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:24",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:25",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:25",
+        "Jugador": "ladyhawke",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:26",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:27",
+        "Jugador": "ladyhawke",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:28",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:28",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:29",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:30",
+        "Jugador": "lorven",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:31",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:31",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:32",
+        "Jugador": "ladyhawke",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:33",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:34",
+        "Jugador": "ladyhawke",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:34",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:35",
+        "Jugador": "ladyhawke",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:36",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:37",
+        "Jugador": "ladyhawke",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:37",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:38",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:39",
+        "Jugador": "maakosky",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:40",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:40",
+        "Jugador": "sisu",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:41",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:42",
+        "Jugador": "sisu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:43",
+        "Jugador": "sisu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:43",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:44",
+        "Jugador": "sisu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:45",
+        "Jugador": "sisu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:46",
+        "Jugador": "sisu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:46",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:47",
+        "Jugador": "sisu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:48",
+        "Jugador": "sisu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:48",
+        "Jugador": "sisu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:49",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:50",
+        "Jugador": "sisu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:51",
+        "Jugador": "sisu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:51",
+        "Jugador": "sisu",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:52",
+        "Jugador": "sisu",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:53",
+        "Jugador": "sisu",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:54",
+        "Jugador": "sisu",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:54",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:55",
+        "Jugador": "ladyhawke",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:56",
+        "Jugador": "burilen",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:57",
+        "Jugador": "ladyhawke",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:57",
+        "Jugador": "burilen",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:58",
+        "Jugador": "burilen",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:06:59",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:00",
+        "Jugador": "punisher",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:00",
+        "Jugador": "punisher",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:01",
+        "Jugador": "punisher",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:02",
+        "Jugador": "lau",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:02",
+        "Jugador": "lau",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:03",
+        "Jugador": "lau",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:04",
+        "Jugador": "lau",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:05",
+        "Jugador": "lau",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:05",
+        "Jugador": "conrado",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:06",
+        "Jugador": "lau",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:07",
+        "Jugador": "conrado",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:08",
+        "Jugador": "lau",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:08",
+        "Jugador": "sath",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:09",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:10",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:11",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:11",
+        "Jugador": "lau",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:12",
+        "Jugador": "daidal",
+        "Cofre": "cripta de nivel 5"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:13",
+        "Jugador": "grírim",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:14",
+        "Jugador": "daidal",
+        "Cofre": "cripta de nivel 10"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:14",
+        "Jugador": "devildog",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:15",
+        "Jugador": "devildog",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:16",
+        "Jugador": "lau",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:17",
+        "Jugador": "malvalito cai",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:17",
+        "Jugador": "malvalito cai",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:18",
+        "Jugador": "malvalito cai",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:19",
+        "Jugador": "malvalito cai",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:20",
+        "Jugador": "malvalito cai",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:20",
+        "Jugador": "malvalito cai",
+        "Cofre": "cripta rara de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:21",
+        "Jugador": "bralis",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:22",
+        "Jugador": "malvalito cai",
+        "Cofre": "cripta épica de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:22",
+        "Jugador": "bralis",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:23",
+        "Jugador": "malvalito cai",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:24",
+        "Jugador": "malvalito cai",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:25",
+        "Jugador": "bralis",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:25",
+        "Jugador": "malvalito cai",
+        "Cofre": "cripta épica de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:26",
+        "Jugador": "bralis",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:27",
+        "Jugador": "bralis",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:28",
+        "Jugador": "bralis",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:28",
+        "Jugador": "bralis",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:29",
+        "Jugador": "bralis",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:30",
+        "Jugador": "bralis",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:31",
+        "Jugador": "bralis",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:31",
+        "Jugador": "bralis",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:32",
+        "Jugador": "lau",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:33",
+        "Jugador": "astralsito",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:34",
+        "Jugador": "astralsito",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:34",
+        "Jugador": "astralsito",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:35",
+        "Jugador": "astralsito",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:36",
+        "Jugador": "astralsito",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:36",
+        "Jugador": "astralsito",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:37",
+        "Jugador": "astralsito",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:38",
+        "Jugador": "astralsito",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:39",
+        "Jugador": "astralsito",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:39",
+        "Jugador": "astralsito",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:40",
+        "Jugador": "astralsito",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:41",
+        "Jugador": "astralsito",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:42",
+        "Jugador": "astralsito",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:42",
+        "Jugador": "astralsito",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:43",
+        "Jugador": "astralsito",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:44",
+        "Jugador": "astralsito",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:45",
+        "Jugador": "astralsito",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:45",
+        "Jugador": "astralsito",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:46",
+        "Jugador": "astralsito",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:47",
+        "Jugador": "astralsito",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:47",
+        "Jugador": "astralsito",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:48",
+        "Jugador": "kari",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:49",
+        "Jugador": "kari",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:50",
+        "Jugador": "kari",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:50",
+        "Jugador": "kari",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:51",
+        "Jugador": "kari",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:52",
+        "Jugador": "kari",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:53",
+        "Jugador": "kari",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:53",
+        "Jugador": "kari",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:54",
+        "Jugador": "milanooo",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:55",
+        "Jugador": "milanooo",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:56",
+        "Jugador": "milanooo",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:56",
+        "Jugador": "milanooo",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:57",
+        "Jugador": "milanooo",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:58",
+        "Jugador": "milanooo",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:59",
+        "Jugador": "milanooo",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:07:59",
+        "Jugador": "milanooo",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:00",
+        "Jugador": "milanooo",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:01",
+        "Jugador": "milanooo",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:02",
+        "Jugador": "milanooo",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:02",
+        "Jugador": "milanooo",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:03",
+        "Jugador": "kishura",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:04",
+        "Jugador": "kishura",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:05",
+        "Jugador": "kishura",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:05",
+        "Jugador": "kishura",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:06",
+        "Jugador": "kishura",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:07",
+        "Jugador": "kishura",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:08",
+        "Jugador": "kishura",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:08",
+        "Jugador": "kishura",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:09",
+        "Jugador": "kishura",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:10",
+        "Jugador": "kishura",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:11",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:11",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:12",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:13",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:13",
+        "Jugador": "berrygoblina",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:14",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:15",
+        "Jugador": "berrygoblina",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:16",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:16",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:17",
+        "Jugador": "berrygoblina",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:18",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:19",
+        "Jugador": "berrygoblina",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:19",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:20",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:21",
+        "Jugador": "berrygoblina",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:22",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:22",
+        "Jugador": "berrygoblina",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:23",
+        "Jugador": "berrygoblina",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:24",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:25",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:25",
+        "Jugador": "berrygoblina",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:26",
+        "Jugador": "berrygoblina",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:27",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:28",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:28",
+        "Jugador": "sisuskk",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:29",
+        "Jugador": "marod",
+        "Cofre": "cripta de nivel 10"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:30",
+        "Jugador": "aaron",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:30",
+        "Jugador": "devildog",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:31",
+        "Jugador": "keradred",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:32",
+        "Jugador": "keradred",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:33",
+        "Jugador": "keradred",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 02:08:33",
+        "Jugador": "keradred",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:11",
+        "Jugador": "benxander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:12",
+        "Jugador": "saberflame",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:12",
+        "Jugador": "benxander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:13",
+        "Jugador": "saberflame",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:14",
+        "Jugador": "benxander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:15",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:15",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:16",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:17",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:18",
+        "Jugador": "directhor",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:18",
+        "Jugador": "directhor",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:19",
+        "Jugador": "directhor",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:20",
+        "Jugador": "marg",
+        "Cofre": "ciudadela de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:21",
+        "Jugador": "directhor",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:21",
+        "Jugador": "akiller",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:22",
+        "Jugador": "directhor",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:23",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:24",
+        "Jugador": "directhor",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:24",
+        "Jugador": "akiller",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:25",
+        "Jugador": "directhor",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:26",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:27",
+        "Jugador": "directhor",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:27",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:28",
+        "Jugador": "directhor",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:29",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:30",
+        "Jugador": "directhor",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:30",
+        "Jugador": "akiller",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:31",
+        "Jugador": "directhor",
+        "Cofre": "cripta épica de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:32",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:33",
+        "Jugador": "directhor",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:33",
+        "Jugador": "akiller",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:34",
+        "Jugador": "directhor",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:35",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:36",
+        "Jugador": "directhor",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:36",
+        "Jugador": "akiller",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:37",
+        "Jugador": "directhor",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:38",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:39",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:39",
+        "Jugador": "directhor",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:40",
+        "Jugador": "directhor",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:41",
+        "Jugador": "akiller",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:42",
+        "Jugador": "directhor",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:42",
+        "Jugador": "directhor",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:43",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:44",
+        "Jugador": "directhor",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:45",
+        "Jugador": "directhor",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:45",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:46",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:47",
+        "Jugador": "akiller",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:48",
+        "Jugador": "akiller",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:48",
+        "Jugador": "marg",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:49",
+        "Jugador": "akiller",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:50",
+        "Jugador": "akiller",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:51",
+        "Jugador": "thordirn",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:51",
+        "Jugador": "thordirn",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:52",
+        "Jugador": "thordirn",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:53",
+        "Jugador": "thordirn",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:54",
+        "Jugador": "thordirn",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:54",
+        "Jugador": "thordirn",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:55",
+        "Jugador": "thordirn",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:56",
+        "Jugador": "thordirn",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:57",
+        "Jugador": "thordirn",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:57",
+        "Jugador": "thordirn",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:58",
+        "Jugador": "thordirn",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:47:59",
+        "Jugador": "thordirn",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:00",
+        "Jugador": "thordirn",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:00",
+        "Jugador": "thordirn",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:01",
+        "Jugador": "thordirn",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:02",
+        "Jugador": "thordirn",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:03",
+        "Jugador": "thordirn",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:03",
+        "Jugador": "thordirn",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:04",
+        "Jugador": "thordirn",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:05",
+        "Jugador": "thordirn",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:06",
+        "Jugador": "turbiybiczu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:06",
+        "Jugador": "turbiybiczu",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:07",
+        "Jugador": "turbiybiczu",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:08",
+        "Jugador": "rafail",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:09",
+        "Jugador": "rafail",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:09",
+        "Jugador": "rafail",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:10",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:11",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:12",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:12",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:13",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:14",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:15",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:15",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:16",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:17",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:18",
+        "Jugador": "eygenaní",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:18",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:19",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:20",
+        "Jugador": "ladyhawke",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:21",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:21",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:22",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:23",
+        "Jugador": "ladyhawke",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:24",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:24",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:25",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:26",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:27",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:27",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:28",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:29",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:30",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:30",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:31",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:32",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:33",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:33",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:34",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:35",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:36",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:36",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:37",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:38",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:39",
+        "Jugador": "lau",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:39",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:40",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:41",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:42",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:42",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:43",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta épica de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:44",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:45",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:45",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:46",
+        "Jugador": "lau",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:47",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:48",
+        "Jugador": "lau",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:48",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:49",
+        "Jugador": "lau",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:50",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:51",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:51",
+        "Jugador": "lau",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:52",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:53",
+        "Jugador": "lau",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:54",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:54",
+        "Jugador": "lau",
+        "Cofre": "cripta rara de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:55",
+        "Jugador": "tyeojind",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:56",
+        "Jugador": "ulises el floreros",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:57",
+        "Jugador": "ulises el floreros",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:58",
+        "Jugador": "ulises el floreros",
+        "Cofre": "ciudadela de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:58",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:48:59",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:00",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:01",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:01",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:02",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:03",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:04",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:04",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:05",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:06",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:06",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:07",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:08",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:09",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:10",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:10",
+        "Jugador": "ulises el floreros",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:11",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:12",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:13",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:13",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:14",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:15",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:16",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:16",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:17",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:18",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:19",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:19",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:20",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:21",
+        "Jugador": "ladywolf",
+        "Cofre": "cripta épica de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:22",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:22",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:23",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:24",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:25",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:25",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:26",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:27",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:28",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:28",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:29",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:30",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:31",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:31",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:32",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:33",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:34",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:34",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:35",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:36",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:37",
+        "Jugador": "cheska",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:37",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:38",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:39",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:40",
+        "Jugador": "ben xander",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:40",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:41",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:42",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:43",
+        "Jugador": "maakosky",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:43",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:44",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:45",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:46",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:46",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:47",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:48",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:49",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:49",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:50",
+        "Jugador": "benxander",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:51",
+        "Jugador": "benxander",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:52",
+        "Jugador": "benxander",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:52",
+        "Jugador": "benxander",
+        "Cofre": "riqueza del clan"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:53",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:54",
+        "Jugador": "francescaromana",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:55",
+        "Jugador": "devildog",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:55",
+        "Jugador": "devildog",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:56",
+        "Jugador": "lappii",
+        "Cofre": "cripta rara de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:57",
+        "Jugador": "lappii",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:58",
+        "Jugador": "benxander",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:58",
+        "Jugador": "benxander",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:49:59",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:00",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:01",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:01",
+        "Jugador": "alma",
+        "Cofre": "arena"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:02",
+        "Jugador": "carp",
+        "Cofre": "cripta épica de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:03",
+        "Jugador": "rufean il",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:04",
+        "Jugador": "rufean",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:04",
+        "Jugador": "rufean",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:05",
+        "Jugador": "rufean",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:06",
+        "Jugador": "rufean",
+        "Cofre": "cripta rara de nivel 30"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:07",
+        "Jugador": "shahzeb khanzada",
+        "Cofre": "cripta épica de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:07",
+        "Jugador": "marod",
+        "Cofre": "arena"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:08",
+        "Jugador": "shahzeb khanzada",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:09",
+        "Jugador": "shahzeb khanzada",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:10",
+        "Jugador": "carp",
+        "Cofre": "cripta de nivel 15"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:10",
+        "Jugador": "the mighty lord",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:11",
+        "Jugador": "the mighty lord",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:12",
+        "Jugador": "the mighty lord",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:13",
+        "Jugador": "the mighty lord",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:13",
+        "Jugador": "alma",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:14",
+        "Jugador": "alma",
+        "Cofre": "cripta de nivel 20"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:15",
+        "Jugador": "the mighty lord",
+        "Cofre": "cripta de nivel 25"
+    },
+    {
+        "Fecha": "2026-08-29 12:50:16",
+        "Jugador": "alma",
+        "Cofre": "cripta de nivel 20"
     }
 ]
